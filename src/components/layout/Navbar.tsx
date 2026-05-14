@@ -1,26 +1,28 @@
-'use client'
+"use client";
 
-import Image from 'next/image'
-import { useState } from 'react'
-import { useTranslations } from 'next-intl'
-import { usePathname, useRouter } from '@/navigation'
+import Image from "next/image";
+import { useState } from "react";
+import { useLocale, useTranslations } from "next-intl";
+import { usePathname, useRouter } from "@/navigation";
 
 export default function Navbar() {
-  const t = useTranslations('nav')
-  const pathname = usePathname()
-  const router = useRouter()
-  const [menuOpen, setMenuOpen] = useState(false)
+  const t = useTranslations("nav");
+  const locale = useLocale();
+  const pathname = usePathname();
+  const router = useRouter();
+  const [menuOpen, setMenuOpen] = useState(false);
 
   function toggleLocale() {
-    router.replace(pathname, { locale: t('language').toLowerCase() as 'en' | 'pt' })
+    const target = locale === "en" ? "pt" : "en";
+    router.replace(pathname, { locale: target });
   }
 
   const links = [
-    { label: t('home'), href: '#hero' },
-    { label: t('about'), href: '#about' },
-    { label: t('portfolio'), href: '#portfolio' },
-    { label: t('contact'), href: '#contact' },
-  ]
+    { label: t("home"), href: "#hero" },
+    { label: t("about"), href: "#about" },
+    { label: t("portfolio"), href: "#portfolio" },
+    { label: t("contact"), href: "#contact" },
+  ];
 
   return (
     <header className="absolute top-0 left-0 right-0 z-50 px-[146px] py-[55px] flex items-center justify-between">
@@ -61,7 +63,7 @@ export default function Navbar() {
           height={31}
           className="rounded-full object-cover"
         />
-        <span>{t('language')}</span>
+        <span>{t("language")}</span>
       </button>
 
       {/* Mobile hamburger */}
@@ -70,9 +72,15 @@ export default function Navbar() {
         onClick={() => setMenuOpen((o) => !o)}
         aria-label="Toggle menu"
       >
-        <span className={`block w-6 h-0.5 bg-[#212121] transition-transform ${menuOpen ? 'rotate-45 translate-y-2' : ''}`} />
-        <span className={`block w-6 h-0.5 bg-[#212121] transition-opacity ${menuOpen ? 'opacity-0' : ''}`} />
-        <span className={`block w-6 h-0.5 bg-[#212121] transition-transform ${menuOpen ? '-rotate-45 -translate-y-2' : ''}`} />
+        <span
+          className={`block w-6 h-0.5 bg-[#212121] transition-transform ${menuOpen ? "rotate-45 translate-y-2" : ""}`}
+        />
+        <span
+          className={`block w-6 h-0.5 bg-[#212121] transition-opacity ${menuOpen ? "opacity-0" : ""}`}
+        />
+        <span
+          className={`block w-6 h-0.5 bg-[#212121] transition-transform ${menuOpen ? "-rotate-45 -translate-y-2" : ""}`}
+        />
       </button>
 
       {/* Mobile menu */}
@@ -89,14 +97,23 @@ export default function Navbar() {
             </a>
           ))}
           <button
-            onClick={() => { toggleLocale(); setMenuOpen(false) }}
+            onClick={() => {
+              toggleLocale();
+              setMenuOpen(false);
+            }}
             className="flex items-center gap-2 border border-[#212121] rounded-[40px] px-4 h-10 text-[#212121] text-base font-normal"
           >
-            <Image src="/images/flag-en.png" alt="" width={24} height={24} className="rounded-full object-cover" />
-            <span>{t('language')}</span>
+            <Image
+              src="/images/flag-en.png"
+              alt=""
+              width={24}
+              height={24}
+              className="rounded-full object-cover"
+            />
+            <span>{t("language")}</span>
           </button>
         </div>
       )}
     </header>
-  )
+  );
 }

@@ -67,8 +67,8 @@ export default function ServicesSection() {
         </p>
       </div>
 
-      {/* Cards container — background layer is blended, content layer is on top */}
-      <div className="relative z-10 mx-auto" style={{ maxWidth: '1350px' }}>
+      {/* Cards container — no z-index so blend layer composites against the green gradient */}
+      <div className="relative mx-auto" style={{ maxWidth: '1350px' }}>
         {/* Luminosity-blended gray background (no content inside) */}
         <div
           className="absolute inset-0 rounded-[143px] pointer-events-none"
