@@ -1,5 +1,5 @@
 import { getRequestConfig } from 'next-intl/server'
-import { routing } from '../middleware'
+import { routing } from '../proxy'
 
 export default getRequestConfig(async ({ requestLocale }) => {
   let locale = await requestLocale
