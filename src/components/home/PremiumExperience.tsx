@@ -17,7 +17,7 @@ export default function PremiumExperience() {
       // Only apply when section is in view
       if (rect.bottom < 0 || rect.top > viewHeight) return
       const progress = (viewHeight - rect.top) / (viewHeight + rect.height)
-      const offset = (progress - 0.5) * 120
+      const offset = (progress - 0.5) * 300
       imgRef.current.style.transform = `translateY(${offset}px)`
     }
 
@@ -30,7 +30,7 @@ export default function PremiumExperience() {
     <section
       ref={sectionRef}
       className="relative overflow-hidden bg-black"
-      style={{ minHeight: '640px' }}
+      style={{ minHeight: '350px' }}
     >
       {/* Parallax background image */}
       <div
@@ -38,9 +38,10 @@ export default function PremiumExperience() {
         className="absolute inset-0 scale-125 will-change-transform"
       >
         <Image
-          src="/images/premium-photo.jpg"
+          src="/images/premium-paralax.png"
           alt=""
           fill
+          priority
           className="object-cover"
         />
         {/* Dark overlay */}

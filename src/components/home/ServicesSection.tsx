@@ -36,20 +36,26 @@ export default function ServicesSection() {
   ]
 
   return (
-    <section
-      id="services"
-      className="relative mx-auto rounded-[150px] py-24 overflow-hidden"
-      style={{
-        background: 'radial-gradient(ellipse at 50% 130%, #0c7e41 0%, #1a1a1a 45%, #000000 100%)',
-      }}
-    >
+    <section id="services" className="relative overflow-hidden rounded-[150px] py-24">
+      {/* Background gradient image */}
+      <div className="absolute inset-0 z-0">
+        <Image
+          src="/images/bg-gradiente.png"
+          alt=""
+          fill
+          className="object-cover"
+          priority
+        />
+      </div>
+
       {/* Header */}
-      <div className="flex flex-col items-center gap-6 mb-16">
+      <div className="relative z-10 flex flex-col items-center gap-6 mb-16">
         <div className="relative w-24 h-24">
           <Image
             src="/images/services-icon.png"
             alt=""
             fill
+            sizes="96px"
             className="object-contain"
           />
         </div>
@@ -61,24 +67,25 @@ export default function ServicesSection() {
         </p>
       </div>
 
-      {/* Cards container */}
-      <div
-        className="mx-auto rounded-[143px] overflow-hidden"
-        style={{
-          background: 'rgba(217,217,217,0.15)',
-          maxWidth: '1350px',
-          mixBlendMode: 'luminosity',
-        }}
-      >
-        {cards.map((card, i) => (
-          <ServiceCard
-            key={card.title}
-            title={card.title}
-            intro={card.intro}
-            points={card.points}
-            isFirst={i === 0}
-          />
-        ))}
+      {/* Cards container — background layer is blended, content layer is on top */}
+      <div className="relative z-10 mx-auto" style={{ maxWidth: '1350px' }}>
+        {/* Luminosity-blended gray background (no content inside) */}
+        <div
+          className="absolute inset-0 rounded-[143px] pointer-events-none"
+          style={{ background: '#d9d9d9', mixBlendMode: 'luminosity' }}
+        />
+        {/* Content on top — not affected by blend mode */}
+        <div className="relative">
+          {cards.map((card, i) => (
+            <ServiceCard
+              key={card.title}
+              title={card.title}
+              intro={card.intro}
+              points={card.points}
+              isFirst={i === 0}
+            />
+          ))}
+        </div>
       </div>
     </section>
   )

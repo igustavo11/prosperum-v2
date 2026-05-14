@@ -27,7 +27,7 @@ export default function Navbar() {
       {/* Logo */}
       <a href="#hero" className="relative h-10 w-[191px] flex-shrink-0">
         <Image
-          src="/images/logo.png"
+          src="/images/logo-branco.svg"
           alt="Prosperium"
           fill
           className="object-contain object-left"

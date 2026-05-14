@@ -7,9 +7,11 @@ export default function Home() {
   return (
     <>
       <Hero />
-      <PremiumExperience />
-      <ServicesSection />
-      <CTASection />
+      <div className="bg-black">
+        <PremiumExperience />
+        <ServicesSection />
+        <CTASection />
+      </div>
     </>
   )
 }
