@@ -1,6 +1,63 @@
 {
-  "home": {
-    "title": "Bem-vindo",
-    "description": "Este é o ponto de partida."
+  "nav": {
+    "home": "INÍCIO",
+    "about": "SOBRE",
+    "portfolio": "PORTFÓLIO",
+    "contact": "CONTATO",
+    "language": "EN"
+  },
+  "hero": {
+    "heading_1": "Nossa paixão pelo mercado imobiliário é o segredo do seu",
+    "heading_highlight": "sucesso",
+    "heading_2": "Investimentos",
+    "subtitle_1": "Transformando investimentos em",
+    "subtitle_2": "oportunidades reais",
+    "cta": "Saiba mais"
+  },
+  "premium": {
+    "title_1": "Experiência",
+    "title_2": "Premium",
+    "description": "Exclusividade com o toque humano que você precisa. Conte com um Carbon Partner e um consultor de investimentos dedicado ao seu sucesso financeiro."
+  },
+  "services": {
+    "title": "Nossos Serviços",
+    "subtitle": "Descubra nossas soluções para potencializar seus investimentos",
+    "core_strategy": {
+      "title": "Estratégia Central",
+      "intro": "Nossa estratégia atende às demandas do mercado imobiliário. Reimaginamos o desenvolvimento e gestão de edifícios residenciais multifamiliares nos EUA, focando em:",
+      "point_1_title": "Colaboração com Especialistas:",
+      "point_1_body": "Arquitetos, engenheiros e empreiteiros de alto nível focados em inovação e qualidade.",
+      "point_2_title": "Gestão Eficiente de Projetos:",
+      "point_2_body": "Técnicas de gestão para otimizar prazos, controlar custos e garantir excelência.",
+      "point_3_title": "Alocação Estratégica de Recursos:",
+      "point_3_body": "Execução de cada projeto com orçamento, recursos e prazos equilibrados para garantir padrões de qualidade e retornos financeiros."
+    },
+    "investment_options": {
+      "title": "Opções de Investimento",
+      "intro": "Oferecemos oportunidades de investimento flexíveis:",
+      "point_1_title": "Investimento em Equity:",
+      "point_1_body": "Participação em projetos, com ganhos por valorização, renda de aluguel e lucros de vendas futuras.",
+      "point_2_title": "Investimento em Dívida:",
+      "point_2_body": "Para quem busca retornos fixos, oferecendo renda previsível garantida por ativos imobiliários.",
+      "point_3_title": "Investimentos por Projeto:",
+      "point_3_body": "Foco em oportunidades individuais com atualizações e relatórios detalhados para decisões informadas."
+    },
+    "performance_goals": {
+      "title": "Metas de Desempenho",
+      "point_1_title": "Retorno Esperado:",
+      "point_1_body": "Buscamos uma TIR de 20%+ em todos os investimentos, garantindo crescimento significativo.",
+      "point_2_title": "Duração dos Projetos:",
+      "point_2_body": "Prazos de 24 a 36 meses, dependendo da complexidade, com cumprimento de prazos e qualidade.",
+      "point_3_title": "Mitigação de Riscos:",
+      "point_3_body": "Planejamento estratégico e supervisão ativa para resultados previsíveis e proteção do capital do investidor."
+    }
+  },
+  "cta": {
+    "heading": "Pronto para investir no seu futuro?",
+    "subtitle": "Entre em contato e descubra como podemos transformar seus objetivos em realidade.",
+    "button": "Fale conosco"
+  },
+  "footer": {
+    "copyright": "© 2026 Prosperium"
   }
 }

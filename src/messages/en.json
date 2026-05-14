@@ -1,6 +1,63 @@
 {
-  "home": {
-    "title": "Welcome",
-    "description": "This is the starting point."
+  "nav": {
+    "home": "HOME",
+    "about": "ABOUT",
+    "portfolio": "PORTFOLIO",
+    "contact": "CONTACT",
+    "language": "PT"
+  },
+  "hero": {
+    "heading_1": "Our passion for real estate is the secret to your",
+    "heading_highlight": "success",
+    "heading_2": "Investments",
+    "subtitle_1": "Transforming investments into",
+    "subtitle_2": "real opportunities",
+    "cta": "Learn more"
+  },
+  "premium": {
+    "title_1": "Premium",
+    "title_2": "Experience",
+    "description": "Exclusivity with the human touch you need. Count on a Carbon Partner and an investment advisor dedicated to your financial success."
+  },
+  "services": {
+    "title": "Our Services",
+    "subtitle": "Discover our solutions to enhance your investments",
+    "core_strategy": {
+      "title": "Core Strategy",
+      "intro": "Our strategy addresses the demands of the real estate market. We reimagine the development and management of multi-family residential buildings in the U.S. by focusing on:",
+      "point_1_title": "Collaboration with Experts:",
+      "point_1_body": "Top-tier architects, engineers, and contractors focused on innovation and quality.",
+      "point_2_title": "Efficient Project Management:",
+      "point_2_body": "Management techniques to optimize timelines, control costs, and ensure excellence.",
+      "point_3_title": "Strategic Resource Allocation:",
+      "point_3_body": "Executing each project with balanced budgeting, resources, and timelines to guarantee quality standards and financial returns."
+    },
+    "investment_options": {
+      "title": "Investment Options",
+      "intro": "We offer flexible investment opportunities:",
+      "point_1_title": "Equity Investment:",
+      "point_1_body": "Ownership in projects, with gains from appreciation, rental income, and future sales profits.",
+      "point_2_title": "Debt Investment:",
+      "point_2_body": "For those seeking fixed returns, offering predictable income backed by real estate assets.",
+      "point_3_title": "Project-Specific Investments:",
+      "point_3_body": "Focus on individual opportunities with detailed updates and reports for informed decisions."
+    },
+    "performance_goals": {
+      "title": "Performance Goals",
+      "point_1_title": "Target Return:",
+      "point_1_body": "We aim for a 20%+ IRR on all investments, ensuring significant growth.",
+      "point_2_title": "Project Duration:",
+      "point_2_body": "Timelines of 24 to 36 months, depending on complexity, with adherence to deadlines and quality.",
+      "point_3_title": "Risk Mitigation:",
+      "point_3_body": "Strategic planning and active oversight for predictable outcomes and investor capital protection."
+    }
+  },
+  "cta": {
+    "heading": "Ready to invest in your future?",
+    "subtitle": "Contact us and discover how we can help transform your goals into reality.",
+    "button": "Contact us"
+  },
+  "footer": {
+    "copyright": "© 2026 Prosperium"
   }
 }
