@@ -8,7 +8,7 @@
 
 ## Visão Geral
 
-Página About composta por seções independentes, cada uma como um componente isolado. O layout global (Navbar + Footer) já existe em `src/app/[locale]/layout.tsx` — nenhum layout novo será criado. Todas as strings de UI passam pelo sistema `next-intl` (`namespace: "about"`).
+Página About composta por seções independentes, cada uma como um componente isolado. O layout global (Navbar + Footer) já existe em `src/app/[locale]/layout.tsx` — nenhum layout novo será criado. Todo conteúdo de texto é **hardcoded** diretamente nos componentes — sem `next-intl`, sem chamadas a API, sem props de dados vindos de fora. Todos os componentes são `"use client"`.
 
 ---
 
@@ -28,13 +28,12 @@ src/
       WhyInvestSection.tsx
       FilterChip.tsx
       InvestCard.tsx
-      ProspererumAdvantage.tsx
+      ProsperumAdvantage.tsx
       PartnersSection.tsx
       PartnerCard.tsx
-  messages/
-    pt.json                       ← adicionar namespace "about"
-    en.json                       ← adicionar namespace "about"
 ```
+
+Nenhum arquivo fora da pasta `about/` é alterado (exceto `page.tsx` da rota).
 
 ---
 
@@ -43,17 +42,17 @@ src/
 **Arquivo:** `src/components/about/AboutHero.tsx`
 
 **Design (Figma node `2057:310`):**
-- Altura: `625px`
-- Background: imagem `about2` com máscara `about1` (mask-image); por cima gradiente preto-para-verde-escuro (`#042311` → transparente, `bg-gradient-to-t`)
-- Título: `"Transforming Real Estate Investments"` — 80px, Urbanist Medium, branco, `max-w-[892px]`, posição absoluta a `262px` do topo, `148px` da esquerda
+- Altura: `625px`, `position: relative`, `overflow: hidden`
+- Background: imagem `about-bg` com máscara `about-mask` (CSS `mask-image`); por cima gradiente `bg-gradient-to-t from-[#042311] to-transparent`
+- Título hardcoded: `"Transforming Real Estate Investments"` — 80px, Urbanist Medium, branco, `max-w-[892px]`, `pt-[262px] pl-[148px]`
 - Nenhum navbar próprio — já injetado pelo layout
 
-**Assets a baixar:**
-- `imgAbout1` (máscara PNG)
-- `imgAbout2` (foto de fundo)
+**Assets:**
+- `imgAbout1` → `/public/images/about/about-mask.png`
+- `imgAbout2` → `/public/images/about/about-bg.jpg`
 
 **Implementação:**  
-Server Component. Usa `<Image fill>` do Next.js para a foto. A máscara CSS (`mask-image`) é aplicada via `style`. Overlay de gradiente como `<div>` absoluto.
+`"use client"`. `<Image fill>` do Next.js para a foto de fundo. Overlay de gradiente como `<div>` absoluto. Máscara CSS via `style={{ maskImage: "url(...)" }}`.
 
 ---
 
@@ -62,22 +61,27 @@ Server Component. Usa `<Image fill>` do Next.js para a foto. A máscara CSS (`ma
 **Arquivos:** `PillarsSection.tsx`, `PillarCard.tsx`
 
 **Design (Figma nodes `2036:201`, `2036:202`, `2036:203`):**
-- Background da seção: gradiente radial dark de `#767676` → `#101010` (rectangle `2036:200`)
-- Título centralizado: `"Our Pillars"` — 80px, branco
-- 3 cards em cascata horizontal (cada um deslocado ~160px à direita em relação ao anterior):
+- Background da seção: gradiente radial dark de `#767676` → `#101010`
+- Título hardcoded: `"Our Pillars"` — 80px, branco, centralizado
+- 3 cards em cascata horizontal (offset crescente à direita):
 
 | # | Título | Cor de fundo | Ícone | Offset esquerdo |
 |---|--------|-------------|-------|-----------------|
-| 1 | Mission | `#0b9a4d` (80% opacidade) | `missao.png` | `143px` |
-| 2 | Strategy | `#4ede72` (80% opacidade) | `estrategia.png` | `303px` |
-| 3 | Principles | `#9fffb7` (80% opacidade) | `justica.png` | `505px` |
+| 1 | Mission | `#0b9a4d` (80% op.) | `pillar-mission.png` | `143px` |
+| 2 | Strategy | `#4ede72` (80% op.) | `pillar-strategy.png` | `303px` |
+| 3 | Principles | `#9fffb7` (80% op.) | `pillar-principles.png` | `505px` |
 
-- Cada card: `rounded-[30px]`, altura `241px`, largura `~1357px`
-- Ícone à esquerda (~167×141px), título (40px branco), descrição (24px `#efefef`)
-- Cards são **componentes isolados** (`PillarCard`) — recebem via props: `title`, `description`, `icon`, `bgColor`, `offsetLeft`
+- Cada card: `rounded-[30px]`, `h-[241px]`, largura ~`1357px`
+- Ícone à esquerda, título 40px branco, descrição 24px `#efefef`
+- `PillarCard` recebe props: `title`, `description`, `iconSrc`, `bgColor`, `offsetLeft` — todos os valores hardcoded em `PillarsSection`
+
+**Assets:**
+- `imgMissao1` → `/public/images/about/pillar-mission.png`
+- `imgEstrategia1` → `/public/images/about/pillar-strategy.png`
+- `imgJustica1` → `/public/images/about/pillar-principles.png`
 
 **Implementação:**  
-`PillarsSection` é Server Component. `PillarCard` é Server Component. Props tipadas com `type`. Strings via `next-intl`.
+`"use client"`. `PillarCard` é componente simples com `"use client"`. Nenhuma prop opcional — tudo tipado com `type PillarCardProps`.
 
 ---
 
@@ -87,49 +91,53 @@ Server Component. Usa `<Image fill>` do Next.js para a foto. A máscara CSS (`ma
 
 **Design (Figma nodes `2038:208` – `2084:7`):**
 
-### Cabeçalho
+### Cabeçalho (hardcoded)
 - Título: `"Why Invest with Prosperum?"` — 60px, branco, centralizado
 - Subtítulo: 24px, `#efefef`, centralizado, `max-w-[940px]`
 
-### Filtros/Pills (3 chips)
-- `"Proven Results"` — estado ativo: gradiente dourado (`#be9339` → `#e4d488`), ícone de check
-- `"Sustainable Growth"` — inativo: borda branca, sem fill
-- `"Secure Investments"` — inativo: borda branca, sem fill
-- **Hover:** ao passar o mouse em qualquer chip inativo → aplica gradiente dourado (mesma aparência do ativo)
-- **Click:** chip clicado vira ativo, os outros voltam a inativo (estado gerenciado localmente no `WhyInvestSection` com `useState` — único `"use client"` desta seção)
+### Filtros/Pills — `FilterChip`
+- 3 chips hardcoded: `"Proven Results"`, `"Sustainable Growth"`, `"Secure Investments"`
+- Cada chip tem um ícone (`icon-check.png`, `icon-growth.png`, `icon-shield.png`)
+- **Ativo:** gradiente dourado `from-[#be9339] to-[#e4d488]`, `rounded-[50px]`
+- **Inativo:** `border border-white`, sem fill
+- **Hover em inativo:** aplica gradiente dourado via CSS (`hover:` classes ou `group`)
+- Estado do chip ativo gerenciado com `useState` em `WhyInvestSection`
+- `FilterChip` recebe: `label`, `iconSrc`, `isActive`, `onClick`
 
-### Grid de Cards (2×2)
-- Background por card: `rgba(217,217,217,0.2)`, `rounded-[50px]`, `324px` de altura, `594px` de largura
-- Conteúdo:
-  1. **Expertise and Experience** — destaque dourado `#bd9238` na primeira linha ("Be a reference…")
+### Grid de Cards (2×2) — `InvestCard`
+- Background: `bg-[rgba(217,217,217,0.2)]`, `rounded-[50px]`, `h-[324px]`, `w-[594px]`
+- **Hover:** `border border-[#bd9238]` com transição suave
+- 4 cards hardcoded:
+  1. **Expertise and Experience** — tem linha de destaque dourada `#bd9238`: *"Be a reference by doing the right thing the right way!"*
   2. **Proven Track Record**
   3. **Commitment to Quality**
   4. **Transparent and Open Communication**
-- **Hover dos cards:** borda dourada animada (`border-[#bd9238]`)
-- `InvestCard` recebe: `title`, `highlight?`, `description` como props
+- `InvestCard` recebe: `title`, `description`, `highlight?: string`
+
+**Assets:**
+- `imgMarcaDeVerificacao1` → `/public/images/about/icon-check.png`
+- `imgElevacao1` → `/public/images/about/icon-growth.png`
+- `imgVerificacaoDeEscudo1` → `/public/images/about/icon-shield.png`
 
 **Implementação:**  
-`WhyInvestSection` é `"use client"` (controla o chip ativo). `FilterChip` e `InvestCard` são subcomponentes do mesmo arquivo ou arquivos separados — separados conforme pedido do usuário.
+`"use client"` em `WhyInvestSection` (useState). `FilterChip` e `InvestCard` também `"use client"` — recebem handlers como props.
 
 ---
 
-## Seção 4 — Prosperum Advantage com Vídeo (`ProspererumAdvantage`)
+## Seção 4 — Prosperum Advantage com Vídeo (`ProsperumAdvantage`)
 
-**Arquivo:** `src/components/about/ProspererumAdvantage.tsx`
+**Arquivo:** `src/components/about/ProsperumAdvantage.tsx`
 
 **Design (Figma node `2036:157`):**
-- Background: gradiente verde (`#042311` → transparente) com máscara `green gradiente 1`
-- **Implementação real:** substituir o background estático por um `<video autoPlay muted loop playsInline>` ocupando `inset-0` como background (igual ao padrão parallax da `PremiumExperience`, mas com vídeo)
-- Por cima do vídeo: overlay dark semitransparente para legibilidade
-- Layout: dois blocos lado a lado
-  - Esquerda: título `"The Prosperum Advantage"` (60px, branco, Urbanist Medium)
-  - Direita: parágrafo de descrição (24px, `#efefef`, `max-w-[706px]`)
-- Espaçamento: `px-[148px] py-24`
-
-**Asset de vídeo:** caminho a definir em `/public/videos/` — o usuário vai fornecer o arquivo; o componente recebe `src` como prop com default para o caminho esperado.
+- Background: `<video autoPlay muted loop playsInline>` em `absolute inset-0 object-cover w-full h-full`
+- Overlay: `bg-black/50` por cima do vídeo
+- Layout lado a lado (`flex gap-16 px-[148px] py-24`):
+  - Esquerda: título hardcoded `"The Prosperum"` / `"Advantage"` — 60px, Urbanist Medium, branco
+  - Direita: parágrafo hardcoded — 24px, `#efefef`, `max-w-[706px]`
+- Vídeo esperado em `/public/videos/advantage.mp4` — hardcoded no `src`
 
 **Implementação:**  
-`"use client"` apenas se necessário para controle do vídeo (normalmente atributos HTML nativos bastam — Server Component viável). Strings via `next-intl`.
+`"use client"`. Sem fallback de gradient — o `<video>` fica visível mesmo sem src (background preto).
 
 ---
 
@@ -138,94 +146,82 @@ Server Component. Usa `<Image fill>` do Next.js para a foto. A máscara CSS (`ma
 **Arquivos:** `PartnersSection.tsx`, `PartnerCard.tsx`
 
 **Design (Figma node `2057:248`):**
-- Background da seção: `#d9d9d9`
-- Título: `"Our Partners"` — 80px, preto, centralizado
-- Container do carrossel: `rounded-[50px]`, `rgba(217,217,217,0.2)`, `1009px` de largura, `518px` de altura, centralizado
-- Navegação: setas esquerda/direita (ícones `Arrow4`, `Arrow5`)
-- **`PartnerCard`** (componente isolado, gerenciável individualmente):
-  - Logo à esquerda (ex: `logoforcabuilders.png`, ~301×238px)
-  - Direita: nome do parceiro (35px bold, preto), descrição (20px, `#212121`), botão `"Visit Website"` com gradiente dourado
+- Background da seção: `bg-[#d9d9d9]`
+- Título hardcoded: `"Our Partners"` — 80px, preto, centralizado
+- Container do carrossel: `rounded-[50px]`, `bg-[rgba(217,217,217,0.2)]`, `w-[1009px]`, `h-[518px]`, centralizado
+- Setas de navegação: ícones `arrow-next.png` e `arrow-prev.png` nos lados do container
+- Lista de parceiros hardcoded em array dentro de `PartnersSection`
 
-**Carrossel:**  
-`PartnersSection` é `"use client"` — controla o índice ativo. `PartnerCard` é componente puro (Server ou Client simples) que recebe: `logo`, `name`, `description`, `websiteUrl`.
+**`PartnerCard` (componente isolado):**
+- Logo à esquerda (`~301×238px`)
+- Direita: nome bold 35px preto, descrição 20px `#212121`, botão `"Visit Website"` com gradiente dourado `from-[#be9339] to-[#e4d488]`
+- Props: `logoSrc`, `name`, `description`, `websiteUrl`
 
-**Isolamento:** cada parceiro é uma instância de `PartnerCard` gerenciada individualmente — adicionar/remover um parceiro é mexer em um único arquivo/dado.
+**Carrossel:**
+- Estado `activeIndex` com `useState` em `PartnersSection`
+- Seta esquerda: `activeIndex = Math.max(0, activeIndex - 1)`
+- Seta direita: `activeIndex = Math.min(partners.length - 1, activeIndex + 1)`
+
+**Assets:**
+- `imgLogoforcabuilders1` → `/public/images/about/partner-forca-builders.png`
+- `imgArrow4` → `/public/images/about/arrow-next.png`
+- `imgArrow5` → `/public/images/about/arrow-prev.png`
+
+**Implementação:**  
+`"use client"` em `PartnersSection`. `PartnerCard` também `"use client"`. Parceiros hardcoded como array de objetos dentro do componente.
 
 ---
 
-## i18n — Namespace `"about"`
+## Assembly — `page.tsx`
 
-Chaves a adicionar em `pt.json` e `en.json`:
+```tsx
+// src/app/[locale]/about/page.tsx
+import AboutHero from '@/components/about/AboutHero'
+import PillarsSection from '@/components/about/PillarsSection'
+import WhyInvestSection from '@/components/about/WhyInvestSection'
+import ProsperumAdvantage from '@/components/about/ProsperumAdvantage'
+import PartnersSection from '@/components/about/PartnersSection'
 
-```json
-"about": {
-  "hero": {
-    "title_line1": "Transforming",
-    "title_line2": "Real Estate Investments"
-  },
-  "pillars": {
-    "title": "Our Pillars",
-    "mission": { "title": "Mission", "description": "..." },
-    "strategy": { "title": "Strategy", "description": "..." },
-    "principles": { "title": "Principles", "description": "..." }
-  },
-  "why_invest": {
-    "title": "Why Invest with Prosperum?",
-    "subtitle": "...",
-    "chips": {
-      "proven_results": "Proven Results",
-      "sustainable_growth": "Sustainable Growth",
-      "secure_investments": "Secure Investments"
-    },
-    "cards": {
-      "expertise": { "title": "Expertise and Experience", "highlight": "Be a reference by doing the right thing the right way!", "description": "..." },
-      "track_record": { "title": "Proven Track Record", "description": "..." },
-      "quality": { "title": "Commitment to Quality", "description": "..." },
-      "communication": { "title": "Transparent and Open Communication", "description": "..." }
-    }
-  },
-  "advantage": {
-    "title_line1": "The Prosperum",
-    "title_line2": "Advantage",
-    "description": "..."
-  },
-  "partners": {
-    "title": "Our Partners",
-    "forca_builders": {
-      "name": "Força Builders",
-      "description": "...",
-      "cta": "Visit Website"
-    }
-  }
+export default function AboutPage() {
+  return (
+    <>
+      <AboutHero />
+      <PillarsSection />
+      <WhyInvestSection />
+      <ProsperumAdvantage />
+      <PartnersSection />
+    </>
+  )
 }
 ```
 
 ---
 
-## Assets
+## Assets — Download Completo
 
-Todos os assets do Figma MCP (URLs `figma.com/api/mcp/asset/...`) devem ser baixados e salvos em `/public/images/about/`:
+Todos salvos em `/public/images/about/`:
 
-| Variável Figma | Arquivo local |
-|---|---|
-| `imgAbout1` | `about-mask.png` |
-| `imgAbout2` | `about-bg.jpg` |
-| `imgMissao1` | `pillar-mission.png` |
-| `imgEstrategia1` | `pillar-strategy.png` |
-| `imgJustica1` | `pillar-principles.png` |
-| `imgMarcaDeVerificacao1` | `icon-check.png` |
-| `imgElevacao1` | `icon-growth.png` |
-| `imgVerificacaoDeEscudo1` | `icon-shield.png` |
-| `imgLogoforcabuilders1` | `partner-forca-builders.png` |
-| `imgGreenGradiente1` | (opcional — substituído por vídeo) |
-| `imgArrow4` / `imgArrow5` | `arrow-next.png` / `arrow-prev.png` |
+| Variável Figma | URL MCP | Arquivo local |
+|---|---|---|
+| `imgAbout2` | `figma.com/api/mcp/asset/b1a34e7d-...` | `about-bg.jpg` |
+| `imgAbout1` | `figma.com/api/mcp/asset/969a84fa-...` | `about-mask.png` |
+| `imgMissao1` | `figma.com/api/mcp/asset/92479bd4-...` | `pillar-mission.png` |
+| `imgEstrategia1` | `figma.com/api/mcp/asset/8cda0f86-...` | `pillar-strategy.png` |
+| `imgJustica1` | `figma.com/api/mcp/asset/caf96012-...` | `pillar-principles.png` |
+| `imgMarcaDeVerificacao1` | `figma.com/api/mcp/asset/1e16a1c1-...` | `icon-check.png` |
+| `imgElevacao1` | `figma.com/api/mcp/asset/afd29f55-...` | `icon-growth.png` |
+| `imgVerificacaoDeEscudo1` | `figma.com/api/mcp/asset/0905c14f-...` | `icon-shield.png` |
+| `imgLogoforcabuilders1` | `figma.com/api/mcp/asset/3b4cd985-...` | `partner-forca-builders.png` |
+| `imgArrow4` | `figma.com/api/mcp/asset/0b366b4c-...` | `arrow-next.png` |
+| `imgArrow5` | `figma.com/api/mcp/asset/8a67d03d-...` | `arrow-prev.png` |
 
 ---
 
 ## Restrições e Decisões
 
-- **Sem novo layout** — rota `about/page.tsx` usa o layout pai `[locale]/layout.tsx` existente
-- **Server Components por padrão** — `"use client"` apenas onde há estado: `WhyInvestSection` (chips) e `PartnersSection` (carrossel)
-- **Sem refactor de código existente** — nada fora da pasta `about/` é alterado, exceto os arquivos `messages/*.json`
-- **Vídeo da seção verde** — o componente espera `/public/videos/advantage.mp4` por padrão; se o arquivo não existir, renderiza o gradient de fallback
-- **Sem nova dependência** — carrossel implementado manualmente com `useState` (sem biblioteca)
+- **Todo conteúdo hardcoded** — sem `next-intl`, sem API, sem props externas de dados
+- **Todos `"use client"`** — sem Server Components nesta página
+- **Sem novo layout** — `about/page.tsx` herda o `[locale]/layout.tsx` existente
+- **Sem novas dependências** — carrossel com `useState` nativo
+- **Vídeo em `/public/videos/advantage.mp4`** — src hardcoded no componente
+- **Sem refactor de código existente** — zero alteração em arquivos fora de `about/`
