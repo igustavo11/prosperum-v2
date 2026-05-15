@@ -6,18 +6,18 @@ type FilterChipProps = {
   label: string;
   iconSrc: string;
   isActive: boolean;
-  onClick: () => void;
+  onClickAction: () => void;
 };
 
 export default function FilterChip({
   label,
   iconSrc,
   isActive,
-  onClick,
+  onClickAction,
 }: FilterChipProps) {
   return (
     <button
-      onClick={onClick}
+      onClick={onClickAction}
       className={`
         flex items-center gap-3 px-6 py-4 rounded-[50px] transition-all duration-200 cursor-pointer
         ${
