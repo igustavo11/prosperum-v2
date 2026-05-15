@@ -59,5 +59,47 @@
   },
   "footer": {
     "copyright": "© 2026 Prosperium"
+  },
+  "about": {
+    "hero": {
+      "title_line1": "Transforming",
+      "title_line2": "Real Estate Investments"
+    },
+    "pillars": {
+      "title": "Our Pillars",
+      "mission_title": "Mission",
+      "mission_description": "What truly sets us apart is our ability to combine innovation with precision. At Prosperium, we are dedicated to not only developing exceptional real estate properties but also creating lasting partnerships with our investors.",
+      "strategy_title": "Strategy",
+      "strategy_description": "What truly sets us apart is our ability to combine innovation with precision. At Prosperium, we are dedicated to not only developing exceptional real estate properties but also creating lasting partnerships with our investors.",
+      "principles_title": "Principles",
+      "principles_description": "What truly sets us apart is our ability to combine innovation with precision. At Prosperium, we are dedicated to not only developing exceptional real estate properties but also creating lasting partnerships with our investors."
+    },
+    "why_invest": {
+      "title": "Why Invest with Prosperum?",
+      "subtitle": "Investing with Prosperum offers more than just financial returns—it offers access to a team of experts who are passionate about real estate development and committed to creating long-term value for investors. Here's why we stand out:",
+      "chip_proven_results": "Proven Results",
+      "chip_sustainable_growth": "Sustainable Growth",
+      "chip_secure_investments": "Secure Investments",
+      "expertise_title": "Expertise and Experience",
+      "expertise_highlight": "Be a reference by doing the right thing the right way!",
+      "expertise_description": "Our team consists of industry veterans with decades of experience in real estate investment, development, and construction. We bring a wealth of knowledge and a track record of success to every project.",
+      "track_record_title": "Proven Track Record",
+      "track_record_description": "With multiple successful projects completed and in the pipeline, Prosperum has consistently delivered on its promises, achieving strong returns for its investors.",
+      "quality_title": "Commitment to Quality",
+      "quality_description": "From design to execution, we ensure that every project meets the highest standards of quality, durability, and sustainability. This commitment enhances the value of our properties and ensures long-term profitability for our investors.",
+      "communication_title": "Transparent and Open Communication",
+      "communication_description": "We provide regular, detailed reports and updates on each project, ensuring that our investors are always informed and can make decisions with confidence."
+    },
+    "advantage": {
+      "title_line1": "The Prosperum",
+      "title_line2": "Advantage",
+      "description": "What truly sets us apart is our ability to combine innovation with precision. At Prosperium, we are dedicated to not only developing exceptional real estate properties but also creating lasting partnerships with our investors. Our focus on sustainability, community impact, and superior project execution drives our success and ensures that we continue to outperform the market."
+    },
+    "partners": {
+      "title": "Our Partners",
+      "visit_website": "Visit Website",
+      "forca_builders_name": "Força Builders",
+      "forca_builders_description": "Investing with Prosperum offers more than just financial returns—it offers access to a team of experts who are passionate about real estate development and committed to creating long-term value for investors. Here's why we stand out:"
+    }
   }
 }

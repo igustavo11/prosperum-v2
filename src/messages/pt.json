@@ -59,5 +59,47 @@
   },
   "footer": {
     "copyright": "© 2026 Prosperium"
+  },
+  "about": {
+    "hero": {
+      "title_line1": "Transformando",
+      "title_line2": "Investimentos Imobiliários"
+    },
+    "pillars": {
+      "title": "Nossos Pilares",
+      "mission_title": "Missão",
+      "mission_description": "O que nos diferencia é nossa capacidade de combinar inovação com precisão. Na Prosperium, somos dedicados não apenas ao desenvolvimento de propriedades imobiliárias excepcionais, mas também à criação de parcerias duradouras com nossos investidores.",
+      "strategy_title": "Estratégia",
+      "strategy_description": "O que nos diferencia é nossa capacidade de combinar inovação com precisão. Na Prosperium, somos dedicados não apenas ao desenvolvimento de propriedades imobiliárias excepcionais, mas também à criação de parcerias duradouras com nossos investidores.",
+      "principles_title": "Princípios",
+      "principles_description": "O que nos diferencia é nossa capacidade de combinar inovação com precisão. Na Prosperium, somos dedicados não apenas ao desenvolvimento de propriedades imobiliárias excepcionais, mas também à criação de parcerias duradouras com nossos investidores."
+    },
+    "why_invest": {
+      "title": "Por Que Investir com a Prosperium?",
+      "subtitle": "Investir com a Prosperium oferece mais do que retornos financeiros — oferece acesso a uma equipe de especialistas apaixonados pelo desenvolvimento imobiliário e comprometidos em criar valor de longo prazo para os investidores.",
+      "chip_proven_results": "Resultados Comprovados",
+      "chip_sustainable_growth": "Crescimento Sustentável",
+      "chip_secure_investments": "Investimentos Seguros",
+      "expertise_title": "Expertise e Experiência",
+      "expertise_highlight": "Seja uma referência fazendo a coisa certa do jeito certo!",
+      "expertise_description": "Nossa equipe é formada por veteranos do setor com décadas de experiência em investimento, desenvolvimento e construção imobiliária. Trazemos conhecimento profundo e um histórico de sucesso para cada projeto.",
+      "track_record_title": "Histórico Comprovado",
+      "track_record_description": "Com múltiplos projetos concluídos com sucesso e em andamento, a Prosperium cumpriu consistentemente suas promessas, alcançando retornos sólidos para seus investidores.",
+      "quality_title": "Compromisso com a Qualidade",
+      "quality_description": "Do design à execução, garantimos que cada projeto atenda aos mais altos padrões de qualidade, durabilidade e sustentabilidade. Esse compromisso aumenta o valor das nossas propriedades e garante lucratividade de longo prazo.",
+      "communication_title": "Comunicação Transparente e Aberta",
+      "communication_description": "Fornecemos relatórios regulares e detalhados de cada projeto, garantindo que nossos investidores estejam sempre informados e possam tomar decisões com confiança."
+    },
+    "advantage": {
+      "title_line1": "A Vantagem",
+      "title_line2": "Prosperium",
+      "description": "O que realmente nos diferencia é nossa capacidade de combinar inovação com precisão. Na Prosperium, somos dedicados não apenas ao desenvolvimento de propriedades imobiliárias excepcionais, mas também à criação de parcerias duradouras com nossos investidores. Nosso foco em sustentabilidade, impacto comunitário e execução superior de projetos impulsiona nosso sucesso."
+    },
+    "partners": {
+      "title": "Nossos Parceiros",
+      "visit_website": "Visitar Site",
+      "forca_builders_name": "Força Builders",
+      "forca_builders_description": "Investir com a Prosperium oferece mais do que retornos financeiros — oferece acesso a uma equipe de especialistas apaixonados pelo desenvolvimento imobiliário e comprometidos em criar valor de longo prazo para os investidores."
+    }
   }
 }
