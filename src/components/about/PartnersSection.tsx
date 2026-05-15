@@ -43,7 +43,7 @@ export default function PartnersSection() {
           onClick={prev}
           disabled={activeIndex === 0}
           className="flex-shrink-0 opacity-60 hover:opacity-100 disabled:opacity-20 transition-opacity"
-          aria-label="Anterior"
+          aria-label={t("prev")}
         >
           <div className="relative w-[37px] h-[37px]">
             <Image
@@ -68,7 +68,7 @@ export default function PartnersSection() {
           onClick={next}
           disabled={activeIndex === partners.length - 1}
           className="flex-shrink-0 opacity-60 hover:opacity-100 disabled:opacity-20 transition-opacity"
-          aria-label="Próximo"
+          aria-label={t("next")}
         >
           <div className="relative w-[37px] h-[37px]">
             <Image
