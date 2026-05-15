@@ -4,6 +4,7 @@ import Image from "next/image";
 import { useState } from "react";
 import { useLocale, useTranslations } from "next-intl";
 import { usePathname, useRouter } from "@/navigation";
+import Link from "next/link";
 
 export default function Navbar() {
   const t = useTranslations("nav");
@@ -19,7 +20,7 @@ export default function Navbar() {
 
   const links = [
     { label: t("home"), href: "#hero" },
-    { label: t("about"), href: "#about" },
+    { label: t("about"), href: "/about" },
     { label: t("portfolio"), href: "#portfolio" },
     { label: t("contact"), href: "#contact" },
   ];

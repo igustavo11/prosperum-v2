@@ -24,7 +24,12 @@ export default function Hero() {
       {/* Building image — positioned at 41.6% from left, bleeds right */}
       <div
         className="absolute hidden lg:block z-0"
-        style={{ left: "41.6%", top: "138px", width: "1112px", height: "878px" }}
+        style={{
+          left: "41.6%",
+          top: "138px",
+          width: "1112px",
+          height: "878px",
+        }}
       >
         <Image
           src="/images/hero-building.png"
@@ -46,7 +51,7 @@ export default function Hero() {
           <span className="font-bold text-[#0e8944]">{t("heading_2")}</span>
         </h1>
 
-        <p className="text-2xl font-medium text-[#212121] mt-8">
+        <p className="text-2xl font-medium text-[#212121] mt-3">
           {t("subtitle_1")}
           <br />
           {t("subtitle_2")}
