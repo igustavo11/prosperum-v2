@@ -8,7 +8,7 @@
 
 ## Visão Geral
 
-Página About composta por seções independentes, cada uma como um componente isolado. O layout global (Navbar + Footer) já existe em `src/app/[locale]/layout.tsx` — nenhum layout novo será criado. Todo conteúdo de texto é **hardcoded** diretamente nos componentes — sem `next-intl`, sem chamadas a API, sem props de dados vindos de fora. Todos os componentes são `"use client"`.
+Página About composta por seções independentes, cada uma como um componente isolado. O layout global (Navbar + Footer) já existe em `src/app/[locale]/layout.tsx` — nenhum layout novo será criado. Todo conteúdo de texto passa por `next-intl` (`useTranslations`, namespace `"about"`) — sem CMS, sem API de conteúdo; as strings são estáticas definidas em `src/messages/pt.json` e `src/messages/en.json`. Todos os componentes são `"use client"`.
 
 ---
 
@@ -31,9 +31,10 @@ src/
       ProsperumAdvantage.tsx
       PartnersSection.tsx
       PartnerCard.tsx
+  messages/
+    pt.json                       ← adicionar namespace "about"
+    en.json                       ← adicionar namespace "about"
 ```
-
-Nenhum arquivo fora da pasta `about/` é alterado (exceto `page.tsx` da rota).
 
 ---
 
@@ -52,7 +53,7 @@ Nenhum arquivo fora da pasta `about/` é alterado (exceto `page.tsx` da rota).
 - `imgAbout2` → `/public/images/about/about-bg.jpg`
 
 **Implementação:**  
-`"use client"`. `<Image fill>` do Next.js para a foto de fundo. Overlay de gradiente como `<div>` absoluto. Máscara CSS via `style={{ maskImage: "url(...)" }}`.
+`"use client"`. `useTranslations("about.hero")`. `<Image fill>` do Next.js para a foto de fundo. Overlay de gradiente como `<div>` absoluto. Máscara CSS via `style={{ maskImage: "url(...)" }}`.
 
 ---
 
@@ -81,7 +82,7 @@ Nenhum arquivo fora da pasta `about/` é alterado (exceto `page.tsx` da rota).
 - `imgJustica1` → `/public/images/about/pillar-principles.png`
 
 **Implementação:**  
-`"use client"`. `PillarCard` é componente simples com `"use client"`. Nenhuma prop opcional — tudo tipado com `type PillarCardProps`.
+`"use client"`. `useTranslations("about.pillars")` em `PillarsSection`. `PillarCard` recebe strings já traduzidas como props. Tipado com `type PillarCardProps`.
 
 ---
 
@@ -120,7 +121,7 @@ Nenhum arquivo fora da pasta `about/` é alterado (exceto `page.tsx` da rota).
 - `imgVerificacaoDeEscudo1` → `/public/images/about/icon-shield.png`
 
 **Implementação:**  
-`"use client"` em `WhyInvestSection` (useState). `FilterChip` e `InvestCard` também `"use client"` — recebem handlers como props.
+`"use client"`. `useTranslations("about.why_invest")` em `WhyInvestSection`. `FilterChip` e `InvestCard` recebem strings já traduzidas como props.
 
 ---
 
@@ -137,7 +138,7 @@ Nenhum arquivo fora da pasta `about/` é alterado (exceto `page.tsx` da rota).
 - Vídeo esperado em `/public/videos/advantage.mp4` — hardcoded no `src`
 
 **Implementação:**  
-`"use client"`. Sem fallback de gradient — o `<video>` fica visível mesmo sem src (background preto).
+`"use client"`. `useTranslations("about.advantage")`. Sem fallback de gradient — o `<video>` fica visível mesmo sem src (background preto).
 
 ---
 
@@ -168,7 +169,7 @@ Nenhum arquivo fora da pasta `about/` é alterado (exceto `page.tsx` da rota).
 - `imgArrow5` → `/public/images/about/arrow-prev.png`
 
 **Implementação:**  
-`"use client"` em `PartnersSection`. `PartnerCard` também `"use client"`. Parceiros hardcoded como array de objetos dentro do componente.
+`"use client"`. `useTranslations("about.partners")` em `PartnersSection`. `PartnerCard` recebe strings já traduzidas como props. Lista de parceiros definida como array usando as chaves de tradução.
 
 ---
 
@@ -219,7 +220,8 @@ Todos salvos em `/public/images/about/`:
 
 ## Restrições e Decisões
 
-- **Todo conteúdo hardcoded** — sem `next-intl`, sem API, sem props externas de dados
+- **Toda string de UI via `next-intl`** — `useTranslations` em cada seção, strings em `messages/pt.json` e `messages/en.json`
+- **Sem API/CMS** — conteúdo é estático, definido nos arquivos de mensagens
 - **Todos `"use client"`** — sem Server Components nesta página
 - **Sem novo layout** — `about/page.tsx` herda o `[locale]/layout.tsx` existente
 - **Sem novas dependências** — carrossel com `useState` nativo
