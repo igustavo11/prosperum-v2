@@ -1,13 +1,11 @@
 "use client";
 
-import { useState } from "react";
 import { useTranslations } from "next-intl";
 import FilterChip from "./FilterChip";
 import InvestCard from "./InvestCard";
 
 export default function WhyInvestSection() {
   const t = useTranslations("about.why_invest");
-  const [activeChip, setActiveChip] = useState(0);
 
   const chips = [
     {
@@ -46,7 +44,6 @@ export default function WhyInvestSection() {
 
   return (
     <section className="py-24 px-[148px]">
-      {/* Header */}
       <div className="flex flex-col items-center mb-12">
         <h2 className="text-[60px] font-medium text-white text-center mb-6">
           {t("title")}
@@ -56,20 +53,16 @@ export default function WhyInvestSection() {
         </p>
       </div>
 
-      {/* Chips */}
       <div className="flex items-center justify-center gap-6 mb-16">
-        {chips.map((chip, i) => (
+        {chips.map((chip) => (
           <FilterChip
             key={chip.label}
             label={chip.label}
             iconSrc={chip.iconSrc}
-            isActive={activeChip === i}
-            onClickAction={() => setActiveChip(i)}
           />
         ))}
       </div>
 
-      {/* 2x2 Grid */}
       <div className="grid grid-cols-2 gap-8 max-w-[1200px] mx-auto">
         {cards.map((card) => (
           <InvestCard

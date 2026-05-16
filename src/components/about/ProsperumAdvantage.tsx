@@ -6,7 +6,10 @@ export default function ProsperumAdvantage() {
   const t = useTranslations("about.advantage");
 
   return (
-    <section className="relative overflow-hidden" style={{ minHeight: "474px" }}>
+    <section
+      className="relative overflow-hidden"
+      style={{ minHeight: "474px" }}
+    >
       {/* Looping video background */}
       <video
         autoPlay
@@ -14,7 +17,7 @@ export default function ProsperumAdvantage() {
         loop
         playsInline
         className="absolute inset-0 w-full h-full object-cover"
-        src="/videos/advantage.mp4"
+        src="/images/about/gradiente.mp4"
       />
 
       {/* Dark overlay for readability */}

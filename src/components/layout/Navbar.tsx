@@ -4,7 +4,7 @@ import Image from "next/image";
 import { useState } from "react";
 import { useLocale, useTranslations } from "next-intl";
 import { usePathname, useRouter } from "@/navigation";
-import Link from "next/link";
+import { Button } from "../ui/button";
 
 export default function Navbar() {
   const t = useTranslations("nav");
@@ -13,16 +13,18 @@ export default function Navbar() {
   const router = useRouter();
   const [menuOpen, setMenuOpen] = useState(false);
 
+  const isWhiteVariant = ["/about"].includes(pathname);
+
   function toggleLocale() {
     const target = locale === "en" ? "pt" : "en";
     router.replace(pathname, { locale: target });
   }
 
   const links = [
-    { label: t("home"), href: "#hero" },
+    { label: t("home"), href: "/" },
     { label: t("about"), href: "/about" },
-    { label: t("portfolio"), href: "#portfolio" },
-    { label: t("contact"), href: "#contact" },
+    { label: t("portfolio"), href: "/portfolio" },
+    { label: t("contact"), href: "/contact" },
   ];
 
   return (
@@ -30,7 +32,7 @@ export default function Navbar() {
       {/* Logo */}
       <a href="#hero" className="relative h-10 w-[191px] flex-shrink-0">
         <Image
-          src="/images/logo-branco.svg"
+          src={isWhiteVariant ? "/images/logow.svg" : "/images/logo-branco.svg"}
           alt="Prosperium"
           fill
           className="object-contain object-left"
@@ -44,7 +46,7 @@ export default function Navbar() {
           <a
             key={link.href}
             href={link.href}
-            className="text-[#212121] text-base font-normal hover:text-primary transition-colors"
+            className={`text-base font-normal hover:text-primary transition-colors ${isWhiteVariant ? "text-white" : "text-[#212121]"}`}
           >
             {link.label}
           </a>
@@ -52,20 +54,30 @@ export default function Navbar() {
       </nav>
 
       {/* Language toggle */}
-      <button
+      <Button
         onClick={toggleLocale}
-        className="hidden md:flex items-center gap-2 border border-[#212121] rounded-[40px] px-4 h-[41px] text-[#212121] text-[20px] font-normal hover:bg-[#21212110] transition-colors"
+        className={`hidden md:flex items-center gap-2 bg-transparent rounded-[40px] px-4 h-[41px] text-[20px] font-normal transition-colors ${isWhiteVariant ? "border border-white text-white hover:bg-white/10" : "border border-[#212121] text-[#212121] hover:bg-[#21212110]"}`}
         aria-label="Switch language"
       >
-        <Image
-          src="/images/flag-en.png"
-          alt=""
-          width={31}
-          height={31}
-          className="rounded-full object-cover"
-        />
+        {locale === "en" ? (
+          <Image
+            src="/images/flag-en.png"
+            alt=""
+            width={31}
+            height={31}
+            className="rounded-full object-cover"
+          />
+        ) : (
+          <Image
+            src="/images/brasil.png"
+            alt=""
+            width={31}
+            height={31}
+            className="rounded-full object-cover"
+          />
+        )}
         <span>{t("language")}</span>
-      </button>
+      </Button>
 
       {/* Mobile hamburger */}
       <button
@@ -74,13 +86,13 @@ export default function Navbar() {
         aria-label="Toggle menu"
       >
         <span
-          className={`block w-6 h-0.5 bg-[#212121] transition-transform ${menuOpen ? "rotate-45 translate-y-2" : ""}`}
+          className={`block w-6 h-0.5 transition-transform ${isWhiteVariant ? "bg-white" : "bg-[#212121]"} ${menuOpen ? "rotate-45 translate-y-2" : ""}`}
         />
         <span
-          className={`block w-6 h-0.5 bg-[#212121] transition-opacity ${menuOpen ? "opacity-0" : ""}`}
+          className={`block w-6 h-0.5 transition-opacity ${isWhiteVariant ? "bg-white" : "bg-[#212121]"} ${menuOpen ? "opacity-0" : ""}`}
         />
         <span
-          className={`block w-6 h-0.5 bg-[#212121] transition-transform ${menuOpen ? "-rotate-45 -translate-y-2" : ""}`}
+          className={`block w-6 h-0.5 transition-transform ${isWhiteVariant ? "bg-white" : "bg-[#212121]"} ${menuOpen ? "-rotate-45 -translate-y-2" : ""}`}
         />
       </button>
 
