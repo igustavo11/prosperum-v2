@@ -104,6 +104,33 @@
       "next": "Próximo"
     }
   },
+  "contact": {
+    "hero": {
+      "title_line1": "Vamos construir",
+      "title_line2": "seu futuro."
+    },
+    "direct": "Contato Direto",
+    "tagline": "Somos fáceis de contatar.",
+    "office_label": "ESCRITÓRIO",
+    "office_address_line1": "144 Essex St",
+    "office_address_line2": "Rochelle Park, NJ 07662",
+    "phone_label": "TELEFONE",
+    "phone_number": "+1 (555) 123-4567",
+    "email_label": "E-MAIL",
+    "email_address": "invest@prosperium.com",
+    "form": {
+      "title": "Nos conte um pouco sobre seu interesse.",
+      "subtitle": "Todos os campos com asterisco são obrigatórios.",
+      "first_name": "Nome",
+      "last_name": "Sobrenome",
+      "email": "E-mail",
+      "phone": "Telefone",
+      "interested_in": "Tenho interesse em",
+      "heard_about": "Como ficou sabendo de nós?",
+      "message": "Mensagem",
+      "submit": "Enviar mensagem"
+    }
+  },
   "portfolio": {
     "viewProject": "Ver projeto",
     "hero": {
@@ -113,6 +140,82 @@
       "title": "Quer ver oportunidades antes de serem públicas?",
       "subtitle": "Investidores credenciados em nossa lista veem novas oportunidades primeiro, com documentos completos de underwriting.",
       "cta": "Acesso antecipado"
+    },
+    "backToPortfolio": "VOLTAR AO PORTFÓLIO",
+    "highlights": "Destaques",
+    "properties": {
+      "essex-residence-1": {
+        "description": "Adquirida como demolição em um lote de esquina desejável em Rochelle Park. A estrutura original dos anos 1950 não estava em conformidade e era subdimensionada para o terreno. A Prosperium demoliu e reconstruiu até o envelope máximo permitido, entregando uma residência transitional-moderna de 4.200 sqft com cinco quartos, quatro banheiros e meio, e um nível inferior com saída ao ar livre.\n\nA casa foi listada em 14 dias após o certificado de ocupação e entrou em contrato acima do preço pedido no primeiro fim de semana de exibições, validando tanto a tese de localização quanto o investimento no nível de acabamento.",
+        "highlights": [
+          "Cinco quartos, quatro banheiros e meio, porão completo com saída ao exterior",
+          "Pisos de carvalho branco, ilha em mármore com cascata, marcenaria personalizada",
+          "Vendida acima do preço pedido no primeiro fim de semana de exibições",
+          "Construção verticalmente integrada sob o modelo Prosperium"
+        ]
+      },
+      "essex-residence-2": {
+        "description": "Adquirida como demolição em um lote de esquina desejável em Rochelle Park. A estrutura original dos anos 1950 não estava em conformidade e era subdimensionada para o terreno. A Prosperium demoliu e reconstruiu até o envelope máximo permitido, entregando uma residência transitional-moderna de 4.200 sqft com cinco quartos, quatro banheiros e meio, e um nível inferior com saída ao ar livre.\n\nA casa foi listada em 14 dias após o certificado de ocupação e entrou em contrato acima do preço pedido no primeiro fim de semana de exibições, validando tanto a tese de localização quanto o investimento no nível de acabamento.",
+        "highlights": [
+          "Cinco quartos, quatro banheiros e meio, porão completo com saída ao exterior",
+          "Pisos de carvalho branco, ilha em mármore com cascata, marcenaria personalizada",
+          "Vendida acima do preço pedido no primeiro fim de semana de exibições",
+          "Construção verticalmente integrada sob o modelo Prosperium"
+        ]
+      },
+      "essex-residence-3": {
+        "description": "Adquirida como demolição em um lote de esquina desejável em Rochelle Park. A estrutura original dos anos 1950 não estava em conformidade e era subdimensionada para o terreno. A Prosperium demoliu e reconstruiu até o envelope máximo permitido, entregando uma residência transitional-moderna de 4.200 sqft com cinco quartos, quatro banheiros e meio, e um nível inferior com saída ao ar livre.\n\nA casa foi listada em 14 dias após o certificado de ocupação e entrou em contrato acima do preço pedido no primeiro fim de semana de exibições, validando tanto a tese de localização quanto o investimento no nível de acabamento.",
+        "highlights": [
+          "Cinco quartos, quatro banheiros e meio, porão completo com saída ao exterior",
+          "Pisos de carvalho branco, ilha em mármore com cascata, marcenaria personalizada",
+          "Vendida acima do preço pedido no primeiro fim de semana de exibições",
+          "Construção verticalmente integrada sob o modelo Prosperium"
+        ]
+      },
+      "essex-residence-4": {
+        "description": "Adquirida como demolição em um lote de esquina desejável em Rochelle Park. A estrutura original dos anos 1950 não estava em conformidade e era subdimensionada para o terreno. A Prosperium demoliu e reconstruiu até o envelope máximo permitido, entregando uma residência transitional-moderna de 4.200 sqft com cinco quartos, quatro banheiros e meio, e um nível inferior com saída ao ar livre.\n\nA casa foi listada em 14 dias após o certificado de ocupação e entrou em contrato acima do preço pedido no primeiro fim de semana de exibições, validando tanto a tese de localização quanto o investimento no nível de acabamento.",
+        "highlights": [
+          "Cinco quartos, quatro banheiros e meio, porão completo com saída ao exterior",
+          "Pisos de carvalho branco, ilha em mármore com cascata, marcenaria personalizada",
+          "Vendida acima do preço pedido no primeiro fim de semana de exibições",
+          "Construção verticalmente integrada sob o modelo Prosperium"
+        ]
+      },
+      "essex-residence-5": {
+        "description": "Adquirida como demolição em um lote de esquina desejável em Rochelle Park. A estrutura original dos anos 1950 não estava em conformidade e era subdimensionada para o terreno. A Prosperium demoliu e reconstruiu até o envelope máximo permitido, entregando uma residência transitional-moderna de 4.200 sqft com cinco quartos, quatro banheiros e meio, e um nível inferior com saída ao ar livre.\n\nA casa foi listada em 14 dias após o certificado de ocupação e entrou em contrato acima do preço pedido no primeiro fim de semana de exibições, validando tanto a tese de localização quanto o investimento no nível de acabamento.",
+        "highlights": [
+          "Cinco quartos, quatro banheiros e meio, porão completo com saída ao exterior",
+          "Pisos de carvalho branco, ilha em mármore com cascata, marcenaria personalizada",
+          "Vendida acima do preço pedido no primeiro fim de semana de exibições",
+          "Construção verticalmente integrada sob o modelo Prosperium"
+        ]
+      },
+      "essex-residence-6": {
+        "description": "Adquirida como demolição em um lote de esquina desejável em Rochelle Park. A estrutura original dos anos 1950 não estava em conformidade e era subdimensionada para o terreno. A Prosperium demoliu e reconstruiu até o envelope máximo permitido, entregando uma residência transitional-moderna de 4.200 sqft com cinco quartos, quatro banheiros e meio, e um nível inferior com saída ao ar livre.\n\nA casa foi listada em 14 dias após o certificado de ocupação e entrou em contrato acima do preço pedido no primeiro fim de semana de exibições, validando tanto a tese de localização quanto o investimento no nível de acabamento.",
+        "highlights": [
+          "Cinco quartos, quatro banheiros e meio, porão completo com saída ao exterior",
+          "Pisos de carvalho branco, ilha em mármore com cascata, marcenaria personalizada",
+          "Vendida acima do preço pedido no primeiro fim de semana de exibições",
+          "Construção verticalmente integrada sob o modelo Prosperium"
+        ]
+      },
+      "essex-residence-7": {
+        "description": "Adquirida como demolição em um lote de esquina desejável em Rochelle Park. A estrutura original dos anos 1950 não estava em conformidade e era subdimensionada para o terreno. A Prosperium demoliu e reconstruiu até o envelope máximo permitido, entregando uma residência transitional-moderna de 4.200 sqft com cinco quartos, quatro banheiros e meio, e um nível inferior com saída ao ar livre.\n\nA casa foi listada em 14 dias após o certificado de ocupação e entrou em contrato acima do preço pedido no primeiro fim de semana de exibições, validando tanto a tese de localização quanto o investimento no nível de acabamento.",
+        "highlights": [
+          "Cinco quartos, quatro banheiros e meio, porão completo com saída ao exterior",
+          "Pisos de carvalho branco, ilha em mármore com cascata, marcenaria personalizada",
+          "Vendida acima do preço pedido no primeiro fim de semana de exibições",
+          "Construção verticalmente integrada sob o modelo Prosperium"
+        ]
+      },
+      "essex-residence-8": {
+        "description": "Adquirida como demolição em um lote de esquina desejável em Rochelle Park. A estrutura original dos anos 1950 não estava em conformidade e era subdimensionada para o terreno. A Prosperium demoliu e reconstruiu até o envelope máximo permitido, entregando uma residência transitional-moderna de 4.200 sqft com cinco quartos, quatro banheiros e meio, e um nível inferior com saída ao ar livre.\n\nA casa foi listada em 14 dias após o certificado de ocupação e entrou em contrato acima do preço pedido no primeiro fim de semana de exibições, validando tanto a tese de localização quanto o investimento no nível de acabamento.",
+        "highlights": [
+          "Cinco quartos, quatro banheiros e meio, porão completo com saída ao exterior",
+          "Pisos de carvalho branco, ilha em mármore com cascata, marcenaria personalizada",
+          "Vendida acima do preço pedido no primeiro fim de semana de exibições",
+          "Construção verticalmente integrada sob o modelo Prosperium"
+        ]
+      }
     }
   }
 }

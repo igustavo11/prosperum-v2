@@ -104,6 +104,33 @@
       "next": "Next"
     }
   },
+  "contact": {
+    "hero": {
+      "title_line1": "Let's build",
+      "title_line2": "your future."
+    },
+    "direct": "Direct Contact",
+    "tagline": "We're easy to reach.",
+    "office_label": "OFFICE",
+    "office_address_line1": "144 Essex St",
+    "office_address_line2": "Rochelle Park, NJ 07662",
+    "phone_label": "PHONE",
+    "phone_number": "+1 (555) 123-4567",
+    "email_label": "E-MAIL",
+    "email_address": "invest@prosperium.com",
+    "form": {
+      "title": "Tell us a little about your interest.",
+      "subtitle": "All fields with an asterisk are required.",
+      "first_name": "First Name",
+      "last_name": "Last Name",
+      "email": "Email",
+      "phone": "Phone",
+      "interested_in": "I'm interested in",
+      "heard_about": "How did you hear about us?",
+      "message": "Message",
+      "submit": "Send a message"
+    }
+  },
   "portfolio": {
     "viewProject": "View project",
     "hero": {
@@ -113,6 +140,82 @@
       "title": "Want to see deals before they're public?",
       "subtitle": "Accredited investors on our list see new opportunities first, with full underwriting documents.",
       "cta": "Get early access"
+    },
+    "backToPortfolio": "BACK TO PORTFOLIO",
+    "highlights": "Highlights",
+    "properties": {
+      "essex-residence-1": {
+        "description": "Acquired as a tear-down on a desirable corner lot in Rochelle Park. The original 1950s structure was non-conforming and undersized for the lot. Prosperium demolished and rebuilt to the maximum allowable envelope, delivering a 4,200 sqft transitional-modern home with five bedrooms, four-and-a-half baths, and a walk-out lower level.\n\nThe home was listed within 14 days of certificate of occupancy and went under contract above asking price within the first weekend of showings, validating both the location thesis and the finish-level investment.",
+        "highlights": [
+          "Five bedrooms, four-and-a-half baths, finished walk-out basement",
+          "White oak engineered floors, marble waterfall island, custom millwork",
+          "Sold above asking within first weekend of showings",
+          "Vertically integrated build under the Prosperium model"
+        ]
+      },
+      "essex-residence-2": {
+        "description": "Acquired as a tear-down on a desirable corner lot in Rochelle Park. The original 1950s structure was non-conforming and undersized for the lot. Prosperium demolished and rebuilt to the maximum allowable envelope, delivering a 4,200 sqft transitional-modern home with five bedrooms, four-and-a-half baths, and a walk-out lower level.\n\nThe home was listed within 14 days of certificate of occupancy and went under contract above asking price within the first weekend of showings, validating both the location thesis and the finish-level investment.",
+        "highlights": [
+          "Five bedrooms, four-and-a-half baths, finished walk-out basement",
+          "White oak engineered floors, marble waterfall island, custom millwork",
+          "Sold above asking within first weekend of showings",
+          "Vertically integrated build under the Prosperium model"
+        ]
+      },
+      "essex-residence-3": {
+        "description": "Acquired as a tear-down on a desirable corner lot in Rochelle Park. The original 1950s structure was non-conforming and undersized for the lot. Prosperium demolished and rebuilt to the maximum allowable envelope, delivering a 4,200 sqft transitional-modern home with five bedrooms, four-and-a-half baths, and a walk-out lower level.\n\nThe home was listed within 14 days of certificate of occupancy and went under contract above asking price within the first weekend of showings, validating both the location thesis and the finish-level investment.",
+        "highlights": [
+          "Five bedrooms, four-and-a-half baths, finished walk-out basement",
+          "White oak engineered floors, marble waterfall island, custom millwork",
+          "Sold above asking within first weekend of showings",
+          "Vertically integrated build under the Prosperium model"
+        ]
+      },
+      "essex-residence-4": {
+        "description": "Acquired as a tear-down on a desirable corner lot in Rochelle Park. The original 1950s structure was non-conforming and undersized for the lot. Prosperium demolished and rebuilt to the maximum allowable envelope, delivering a 4,200 sqft transitional-modern home with five bedrooms, four-and-a-half baths, and a walk-out lower level.\n\nThe home was listed within 14 days of certificate of occupancy and went under contract above asking price within the first weekend of showings, validating both the location thesis and the finish-level investment.",
+        "highlights": [
+          "Five bedrooms, four-and-a-half baths, finished walk-out basement",
+          "White oak engineered floors, marble waterfall island, custom millwork",
+          "Sold above asking within first weekend of showings",
+          "Vertically integrated build under the Prosperium model"
+        ]
+      },
+      "essex-residence-5": {
+        "description": "Acquired as a tear-down on a desirable corner lot in Rochelle Park. The original 1950s structure was non-conforming and undersized for the lot. Prosperium demolished and rebuilt to the maximum allowable envelope, delivering a 4,200 sqft transitional-modern home with five bedrooms, four-and-a-half baths, and a walk-out lower level.\n\nThe home was listed within 14 days of certificate of occupancy and went under contract above asking price within the first weekend of showings, validating both the location thesis and the finish-level investment.",
+        "highlights": [
+          "Five bedrooms, four-and-a-half baths, finished walk-out basement",
+          "White oak engineered floors, marble waterfall island, custom millwork",
+          "Sold above asking within first weekend of showings",
+          "Vertically integrated build under the Prosperium model"
+        ]
+      },
+      "essex-residence-6": {
+        "description": "Acquired as a tear-down on a desirable corner lot in Rochelle Park. The original 1950s structure was non-conforming and undersized for the lot. Prosperium demolished and rebuilt to the maximum allowable envelope, delivering a 4,200 sqft transitional-modern home with five bedrooms, four-and-a-half baths, and a walk-out lower level.\n\nThe home was listed within 14 days of certificate of occupancy and went under contract above asking price within the first weekend of showings, validating both the location thesis and the finish-level investment.",
+        "highlights": [
+          "Five bedrooms, four-and-a-half baths, finished walk-out basement",
+          "White oak engineered floors, marble waterfall island, custom millwork",
+          "Sold above asking within first weekend of showings",
+          "Vertically integrated build under the Prosperium model"
+        ]
+      },
+      "essex-residence-7": {
+        "description": "Acquired as a tear-down on a desirable corner lot in Rochelle Park. The original 1950s structure was non-conforming and undersized for the lot. Prosperium demolished and rebuilt to the maximum allowable envelope, delivering a 4,200 sqft transitional-modern home with five bedrooms, four-and-a-half baths, and a walk-out lower level.\n\nThe home was listed within 14 days of certificate of occupancy and went under contract above asking price within the first weekend of showings, validating both the location thesis and the finish-level investment.",
+        "highlights": [
+          "Five bedrooms, four-and-a-half baths, finished walk-out basement",
+          "White oak engineered floors, marble waterfall island, custom millwork",
+          "Sold above asking within first weekend of showings",
+          "Vertically integrated build under the Prosperium model"
+        ]
+      },
+      "essex-residence-8": {
+        "description": "Acquired as a tear-down on a desirable corner lot in Rochelle Park. The original 1950s structure was non-conforming and undersized for the lot. Prosperium demolished and rebuilt to the maximum allowable envelope, delivering a 4,200 sqft transitional-modern home with five bedrooms, four-and-a-half baths, and a walk-out lower level.\n\nThe home was listed within 14 days of certificate of occupancy and went under contract above asking price within the first weekend of showings, validating both the location thesis and the finish-level investment.",
+        "highlights": [
+          "Five bedrooms, four-and-a-half baths, finished walk-out basement",
+          "White oak engineered floors, marble waterfall island, custom millwork",
+          "Sold above asking within first weekend of showings",
+          "Vertically integrated build under the Prosperium model"
+        ]
+      }
     }
   }
 }

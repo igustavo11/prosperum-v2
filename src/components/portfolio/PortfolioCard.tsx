@@ -6,13 +6,13 @@ import { useTranslations } from "next-intl";
 import type { Property } from "@/data/properties";
 import { Link } from "@/navigation";
 
-type PortfolioCardProps = Pick<Property, "id" | "title" | "location" | "image">;
+type PortfolioCardProps = Pick<Property, "id" | "title" | "location" | "images">;
 
 export default function PortfolioCard({
   id,
   title,
   location,
-  image,
+  images,
 }: PortfolioCardProps) {
   const t = useTranslations("portfolio");
 
@@ -23,7 +23,7 @@ export default function PortfolioCard({
         className="block relative w-full aspect-[4/3] overflow-hidden rounded-sm"
       >
         <Image
-          src={image}
+          src={images[0]}
           alt={title}
           fill
           className="object-cover hover:scale-105 transition-transform duration-300"

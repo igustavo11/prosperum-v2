@@ -1,8 +1,8 @@
 "use client";
 
 import Image from "next/image";
-import { useState } from "react";
 import { useLocale, useTranslations } from "next-intl";
+import { useState } from "react";
 import { usePathname, useRouter } from "@/navigation";
 import { Button } from "../ui/button";
 
@@ -13,7 +13,17 @@ export default function Navbar() {
   const router = useRouter();
   const [menuOpen, setMenuOpen] = useState(false);
 
-  const isWhiteVariant = ["/about", "/portfolio"].includes(pathname);
+  const isWhiteVariant = ["/about", "/portfolio", "/contact"].includes(pathname);
+  const isPropertyDetail = pathname.startsWith("/portfolio/");
+  const logoSrc =
+    isWhiteVariant || isPropertyDetail
+      ? "/images/logow.svg"
+      : "/images/logo-branco.svg";
+  const linkTextClass = isWhiteVariant ? "text-white" : "text-[#212121]";
+  const borderVariantClass = isWhiteVariant
+    ? "border border-white text-white hover:bg-white/10"
+    : "border border-[#212121] text-[#212121] hover:bg-[#21212110]";
+  const hamburgerColor = isWhiteVariant ? "bg-white" : "bg-[#212121]";
 
   function toggleLocale() {
     const target = locale === "en" ? "pt" : "en";
@@ -32,7 +42,7 @@ export default function Navbar() {
       {/* Logo */}
       <a href="#hero" className="relative h-10 w-[191px] flex-shrink-0">
         <Image
-          src={isWhiteVariant ? "/images/logow.svg" : "/images/logo-branco.svg"}
+          src={logoSrc}
           alt="Prosperium"
           fill
           className="object-contain object-left"
@@ -46,7 +56,7 @@ export default function Navbar() {
           <a
             key={link.href}
             href={link.href}
-            className={`text-base font-normal hover:text-primary transition-colors ${isWhiteVariant ? "text-white" : "text-[#212121]"}`}
+            className={`text-base font-normal hover:text-primary transition-colors ${linkTextClass}`}
           >
             {link.label}
           </a>
@@ -56,7 +66,7 @@ export default function Navbar() {
       {/* Language toggle */}
       <Button
         onClick={toggleLocale}
-        className={`hidden md:flex items-center gap-2 bg-transparent rounded-[40px] px-4 h-[41px] text-[20px] font-normal transition-colors ${isWhiteVariant ? "border border-white text-white hover:bg-white/10" : "border border-[#212121] text-[#212121] hover:bg-[#21212110]"}`}
+        className={`hidden md:flex items-center gap-2 bg-transparent rounded-[40px] px-4 h-[41px] text-[20px] font-normal transition-colors ${borderVariantClass}`}
         aria-label="Switch language"
       >
         {locale === "en" ? (
@@ -81,18 +91,19 @@ export default function Navbar() {
 
       {/* Mobile hamburger */}
       <button
+        type="button"
         className="md:hidden flex flex-col gap-1.5 p-2"
         onClick={() => setMenuOpen((o) => !o)}
         aria-label="Toggle menu"
       >
         <span
-          className={`block w-6 h-0.5 transition-transform ${isWhiteVariant ? "bg-white" : "bg-[#212121]"} ${menuOpen ? "rotate-45 translate-y-2" : ""}`}
+          className={`block w-6 h-0.5 transition-transform ${hamburgerColor} ${menuOpen ? "rotate-45 translate-y-2" : ""}`}
         />
         <span
-          className={`block w-6 h-0.5 transition-opacity ${isWhiteVariant ? "bg-white" : "bg-[#212121]"} ${menuOpen ? "opacity-0" : ""}`}
+          className={`block w-6 h-0.5 transition-opacity ${hamburgerColor} ${menuOpen ? "opacity-0" : ""}`}
         />
         <span
-          className={`block w-6 h-0.5 transition-transform ${isWhiteVariant ? "bg-white" : "bg-[#212121]"} ${menuOpen ? "-rotate-45 -translate-y-2" : ""}`}
+          className={`block w-6 h-0.5 transition-transform ${hamburgerColor} ${menuOpen ? "-rotate-45 -translate-y-2" : ""}`}
         />
       </button>
 
@@ -110,6 +121,7 @@ export default function Navbar() {
             </a>
           ))}
           <button
+            type="button"
             onClick={() => {
               toggleLocale();
               setMenuOpen(false);

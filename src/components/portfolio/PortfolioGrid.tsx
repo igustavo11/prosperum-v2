@@ -13,7 +13,7 @@ export default function PortfolioGrid() {
             id={property.id}
             title={property.title}
             location={property.location}
-            image={property.image}
+            images={property.images}
           />
         ))}
       </div>
