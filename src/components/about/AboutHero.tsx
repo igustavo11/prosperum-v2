@@ -7,12 +7,16 @@ export default function AboutHero() {
   const t = useTranslations("about.hero");
 
   return (
-    <section className="relative overflow-hidden" style={{ minHeight: "625px" }}>
+    <section
+      className="relative overflow-hidden"
+      style={{ minHeight: "625px" }}
+    >
       {/* Photo */}
       <Image
         src="/images/about/abou.png"
         alt=""
         fill
+        sizes="100vw"
         priority
         className="object-cover"
       />

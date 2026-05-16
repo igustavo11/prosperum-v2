@@ -6,7 +6,10 @@ import { useTranslations } from "next-intl";
 import type { Property } from "@/data/properties";
 import { Link } from "@/navigation";
 
-type PortfolioCardProps = Pick<Property, "id" | "title" | "location" | "images">;
+type PortfolioCardProps = Pick<
+  Property,
+  "id" | "title" | "location" | "images"
+>;
 
 export default function PortfolioCard({
   id,

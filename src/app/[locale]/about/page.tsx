@@ -1,8 +1,8 @@
 import AboutHero from "@/components/about/AboutHero";
-import PillarsSection from "@/components/about/PillarsSection";
-import WhyInvestSection from "@/components/about/WhyInvestSection";
-import ProsperumAdvantage from "@/components/about/ProsperumAdvantage";
 import PartnersSection from "@/components/about/PartnersSection";
+import PillarsSection from "@/components/about/PillarsSection";
+import ProsperumAdvantage from "@/components/about/ProsperumAdvantage";
+import WhyInvestSection from "@/components/about/WhyInvestSection";
 
 export default function AboutPage() {
   return (

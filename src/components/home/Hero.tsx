@@ -16,6 +16,7 @@ export default function Hero() {
           src="/images/hero-bg.png"
           alt=""
           fill
+          sizes="100vw"
           className="object-cover opacity-10"
           priority
         />
@@ -35,6 +36,7 @@ export default function Hero() {
           src="/images/hero-building.png"
           alt="Modern apartment building"
           fill
+          sizes="(max-width: 1024px) 0px, 50vw"
           className="object-cover object-left-top"
           priority
         />

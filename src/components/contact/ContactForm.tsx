@@ -1,7 +1,7 @@
 "use client";
 
-import { useTranslations } from "next-intl";
 import { ChevronDown } from "lucide-react";
+import { useTranslations } from "next-intl";
 
 export default function ContactForm() {
   const t = useTranslations("contact.form");
@@ -16,9 +16,7 @@ export default function ContactForm() {
       <h2 className="text-[30px] font-semibold text-[#0e8944] leading-snug mb-2">
         {t("title")}
       </h2>
-      <p className="text-[20px] font-medium text-black mb-8">
-        {t("subtitle")}
-      </p>
+      <p className="text-[20px] font-medium text-black mb-8">{t("subtitle")}</p>
 
       <form onSubmit={handleSubmit} className="flex flex-col gap-6">
         {/* Row 1: First Name / Last Name */}

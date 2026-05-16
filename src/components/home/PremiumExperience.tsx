@@ -1,8 +1,8 @@
 "use client";
 
-import { useEffect, useRef } from "react";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
+import { useEffect, useRef } from "react";
 
 export default function PremiumExperience() {
   const t = useTranslations("premium");
@@ -41,7 +41,7 @@ export default function PremiumExperience() {
           src="/images/premium-paralax.png"
           alt=""
           fill
-          priority
+          sizes="100vw"
           className="object-cover"
         />
         {/* Dark overlay */}

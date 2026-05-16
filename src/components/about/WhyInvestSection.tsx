@@ -43,8 +43,8 @@ export default function WhyInvestSection() {
   ];
 
   return (
-    <section className="py-24 px-[148px]">
-      <div className="flex flex-col items-center mb-12">
+    <section className="py-24">
+      <div className="flex flex-col items-center mb-12 px-[148px]">
         <h2 className="text-[60px] font-medium text-white text-center mb-6">
           {t("title")}
         </h2>
@@ -53,7 +53,7 @@ export default function WhyInvestSection() {
         </p>
       </div>
 
-      <div className="flex items-center justify-center gap-6 mb-16">
+      <div className="flex items-center justify-center gap-6 mb-16 px-[148px]">
         {chips.map((chip) => (
           <FilterChip
             key={chip.label}
@@ -63,7 +63,7 @@ export default function WhyInvestSection() {
         ))}
       </div>
 
-      <div className="grid grid-cols-2 gap-8 max-w-[1200px] mx-auto">
+      <div className="grid grid-cols-2 gap-x-8 gap-y-[26px] max-w-[1220px] mx-auto">
         {cards.map((card) => (
           <InvestCard
             key={card.title}

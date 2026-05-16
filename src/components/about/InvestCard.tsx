@@ -14,7 +14,7 @@ export default function InvestCard({
   return (
     <div
       className="
-        h-[324px] w-[594px] rounded-[50px] p-12
+        h-[324px] w-full rounded-[50px] p-12
         bg-[rgba(217,217,217,0.2)]
         border border-transparent
         hover:border-[#bd9238] transition-colors duration-200

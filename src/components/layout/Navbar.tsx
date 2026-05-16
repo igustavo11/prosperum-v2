@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { useLocale, useTranslations } from "next-intl";
 import { useState } from "react";
-import { usePathname, useRouter } from "@/navigation";
+import { Link, usePathname, useRouter } from "@/navigation";
 import { Button } from "../ui/button";
 
 export default function Navbar() {
@@ -13,7 +13,9 @@ export default function Navbar() {
   const router = useRouter();
   const [menuOpen, setMenuOpen] = useState(false);
 
-  const isWhiteVariant = ["/about", "/portfolio", "/contact"].includes(pathname);
+  const isWhiteVariant = ["/about", "/portfolio", "/contact"].includes(
+    pathname,
+  );
   const isPropertyDetail = pathname.startsWith("/portfolio/");
   const logoSrc =
     isWhiteVariant || isPropertyDetail
@@ -45,6 +47,7 @@ export default function Navbar() {
           src={logoSrc}
           alt="Prosperium"
           fill
+          sizes="191px"
           className="object-contain object-left"
           priority
         />
@@ -53,13 +56,13 @@ export default function Navbar() {
       {/* Desktop nav links */}
       <nav className="hidden md:flex items-center gap-8">
         {links.map((link) => (
-          <a
+          <Link
             key={link.href}
             href={link.href}
             className={`text-base font-normal hover:text-primary transition-colors ${linkTextClass}`}
           >
             {link.label}
-          </a>
+          </Link>
         ))}
       </nav>
 
@@ -111,14 +114,14 @@ export default function Navbar() {
       {menuOpen && (
         <div className="md:hidden absolute top-full left-0 right-0 bg-white shadow-lg flex flex-col items-start px-8 py-6 gap-6">
           {links.map((link) => (
-            <a
+            <Link
               key={link.href}
               href={link.href}
               className="text-[#212121] text-lg font-normal"
               onClick={() => setMenuOpen(false)}
             >
               {link.label}
-            </a>
+            </Link>
           ))}
           <button
             type="button"

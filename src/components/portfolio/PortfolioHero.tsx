@@ -15,6 +15,7 @@ export default function PortfolioHero() {
         src="/images/portfolio/hero.jpg"
         alt=""
         fill
+        sizes="100vw"
         priority
         className="object-cover object-center"
       />

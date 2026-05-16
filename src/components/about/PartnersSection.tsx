@@ -1,9 +1,9 @@
 "use client";
 
-import { useRef } from "react";
 import { useTranslations } from "next-intl";
+import { useRef } from "react";
+import { Autoplay, Navigation } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Autoplay } from "swiper/modules";
 import "swiper/css";
 import PartnerCard from "./PartnerCard";
 
@@ -43,8 +43,20 @@ export default function PartnersSection() {
           className="flex-shrink-0 opacity-60 hover:opacity-100 transition-opacity"
           aria-label={t("prev")}
         >
-          <svg width="20" height="37" viewBox="0 0 20 37" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M18 2L2 18.5L18 35" stroke="#be9339" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
+          <svg
+            width="20"
+            height="37"
+            viewBox="0 0 20 37"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M18 2L2 18.5L18 35"
+              stroke="#be9339"
+              strokeWidth="3"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            />
           </svg>
         </button>
 
@@ -80,8 +92,20 @@ export default function PartnersSection() {
           className="flex-shrink-0 opacity-60 hover:opacity-100 transition-opacity"
           aria-label={t("next")}
         >
-          <svg width="20" height="37" viewBox="0 0 20 37" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M2 2L18 18.5L2 35" stroke="#be9339" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
+          <svg
+            width="20"
+            height="37"
+            viewBox="0 0 20 37"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M2 2L18 18.5L2 35"
+              stroke="#be9339"
+              strokeWidth="3"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            />
           </svg>
         </button>
       </div>

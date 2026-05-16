@@ -1,7 +1,7 @@
-import Navbar from "@/components/layout/Navbar";
+import ContactForm from "@/components/contact/ContactForm";
 import ContactHero from "@/components/contact/ContactHero";
 import ContactInfo from "@/components/contact/ContactInfo";
-import ContactForm from "@/components/contact/ContactForm";
+import Navbar from "@/components/layout/Navbar";
 
 export default function ContactPage() {
   return (

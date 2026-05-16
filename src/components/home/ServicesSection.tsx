@@ -73,8 +73,8 @@ export default function ServicesSection() {
           src="/images/bg-gradiente.png"
           alt=""
           fill
+          sizes="100vw"
           className="object-cover"
-          priority
         />
       </div>
 

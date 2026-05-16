@@ -1,16 +1,21 @@
 type Point = {
-  title: string
-  body: string
-}
+  title: string;
+  body: string;
+};
 
 type ServiceCardProps = {
-  title: string
-  intro?: string
-  points: Point[]
-  isFirst?: boolean
-}
+  title: string;
+  intro?: string;
+  points: Point[];
+  isFirst?: boolean;
+};
 
-export default function ServiceCard({ title, intro, points, isFirst = false }: ServiceCardProps) {
+export default function ServiceCard({
+  title,
+  intro,
+  points,
+  isFirst = false,
+}: ServiceCardProps) {
   return (
     <div>
       {!isFirst && (
@@ -20,11 +25,15 @@ export default function ServiceCard({ title, intro, points, isFirst = false }: S
       )}
       <div
         className="grid py-12"
-        style={{ gridTemplateColumns: '381px 1fr', paddingLeft: '105px', paddingRight: '95px' }}
+        style={{
+          gridTemplateColumns: "381px 1fr",
+          paddingLeft: "105px",
+          paddingRight: "95px",
+        }}
       >
         {/* Left: title */}
         <h3 className="text-[55px] font-medium text-[#212121] leading-[1.05]">
-          {title.split(' ').map((word, i, arr) => (
+          {title.split(" ").map((word, i, arr) => (
             <span key={i}>
               {word}
               {i < arr.length - 1 && <br />}
@@ -44,5 +53,5 @@ export default function ServiceCard({ title, intro, points, isFirst = false }: S
         </div>
       </div>
     </div>
-  )
+  );
 }

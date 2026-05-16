@@ -1,7 +1,7 @@
-import Hero from '@/components/home/Hero'
-import PremiumExperience from '@/components/home/PremiumExperience'
-import ServicesSection from '@/components/home/ServicesSection'
-import CTASection from '@/components/home/CTASection'
+import CTASection from "@/components/home/CTASection";
+import Hero from "@/components/home/Hero";
+import PremiumExperience from "@/components/home/PremiumExperience";
+import ServicesSection from "@/components/home/ServicesSection";
 
 export default function Home() {
   return (
@@ -13,5 +13,5 @@ export default function Home() {
         <CTASection />
       </div>
     </>
-  )
+  );
 }
