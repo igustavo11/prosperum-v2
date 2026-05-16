@@ -1,0 +1,53 @@
+"use client";
+
+import { ArrowRight, MapPin } from "lucide-react";
+import Image from "next/image";
+import { useTranslations } from "next-intl";
+import type { Property } from "@/data/properties";
+import { Link } from "@/navigation";
+
+type PortfolioCardProps = Pick<Property, "id" | "title" | "location" | "image">;
+
+export default function PortfolioCard({
+  id,
+  title,
+  location,
+  image,
+}: PortfolioCardProps) {
+  const t = useTranslations("portfolio");
+
+  return (
+    <div className="flex flex-col gap-4">
+      <Link
+        href={`/portfolio/${id}`}
+        className="block relative w-full aspect-[4/3] overflow-hidden rounded-sm"
+      >
+        <Image
+          src={image}
+          alt={title}
+          fill
+          className="object-cover hover:scale-105 transition-transform duration-300"
+        />
+      </Link>
+
+      <p className="font-['Urbanist'] font-semibold text-[40px] text-[#0c7e41] leading-tight">
+        {title}
+      </p>
+
+      <div className="flex items-center gap-2">
+        <MapPin size={20} className="text-[#101010] flex-shrink-0" />
+        <p className="font-['Urbanist'] font-medium text-[20px] text-[#101010]">
+          {location}
+        </p>
+      </div>
+
+      <Link
+        href={`/portfolio/${id}`}
+        className="inline-flex items-center gap-3 border border-[#212121] rounded-[50px] h-[48px] px-6 w-fit font-['Urbanist'] font-medium text-[20px] text-[#212121] hover:bg-[#21212110] transition-colors"
+      >
+        {t("viewProject")}
+        <ArrowRight size={16} />
+      </Link>
+    </div>
+  );
+}

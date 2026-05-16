@@ -13,7 +13,7 @@ export default function Navbar() {
   const router = useRouter();
   const [menuOpen, setMenuOpen] = useState(false);
 
-  const isWhiteVariant = ["/about"].includes(pathname);
+  const isWhiteVariant = ["/about", "/portfolio"].includes(pathname);
 
   function toggleLocale() {
     const target = locale === "en" ? "pt" : "en";

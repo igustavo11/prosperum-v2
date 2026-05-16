@@ -103,5 +103,16 @@
       "prev": "Previous",
       "next": "Next"
     }
+  },
+  "portfolio": {
+    "viewProject": "View project",
+    "hero": {
+      "title": "Portfolio"
+    },
+    "disclaimer": {
+      "title": "Want to see deals before they're public?",
+      "subtitle": "Accredited investors on our list see new opportunities first, with full underwriting documents.",
+      "cta": "Get early access"
+    }
   }
 }

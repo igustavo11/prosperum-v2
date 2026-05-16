@@ -103,5 +103,16 @@
       "prev": "Anterior",
       "next": "Próximo"
     }
+  },
+  "portfolio": {
+    "viewProject": "Ver projeto",
+    "hero": {
+      "title": "Portfolio"
+    },
+    "disclaimer": {
+      "title": "Quer ver oportunidades antes de serem públicas?",
+      "subtitle": "Investidores credenciados em nossa lista veem novas oportunidades primeiro, com documentos completos de underwriting.",
+      "cta": "Acesso antecipado"
+    }
   }
 }
