@@ -10,7 +10,6 @@ export default function ProsperumAdvantage() {
       className="relative overflow-hidden"
       style={{ minHeight: "474px" }}
     >
-      {/* Looping video background */}
       <video
         autoPlay
         muted
@@ -20,12 +19,9 @@ export default function ProsperumAdvantage() {
         src="/images/about/gradiente.mp4"
       />
 
-      {/* Dark overlay for readability */}
       <div className="absolute inset-0 bg-black/50" />
 
-      {/* Content */}
       <div className="relative z-10 max-w-[1440px] mx-auto px-[148px] py-24 flex items-start gap-16">
-        {/* Left: title */}
         <div className="shrink-0">
           <h2
             className="text-[60px] mt-8
@@ -37,7 +33,6 @@ export default function ProsperumAdvantage() {
           </h2>
         </div>
 
-        {/* Right: description */}
         <p className="text-[24px] font-medium text-[#efefef] max-w-[706px] mt-2">
           {t("description")}
         </p>

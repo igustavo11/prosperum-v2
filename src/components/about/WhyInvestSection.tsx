@@ -6,6 +6,7 @@ import InvestCard from "./InvestCard";
 
 export default function WhyInvestSection() {
   const t = useTranslations("about.why_invest");
+  const tAdv = useTranslations("about.advantage");
 
   const chips = [
     {
@@ -24,21 +25,24 @@ export default function WhyInvestSection() {
 
   const cards = [
     {
-      title: t("expertise_title"),
-      highlight: t("expertise_highlight"),
-      description: t("expertise_description"),
+      title: tAdv("items.expertise.title"),
+      highlight: tAdv("items.expertise.highlight"),
+      description: tAdv("items.expertise.description"),
     },
     {
-      title: t("track_record_title"),
-      description: t("track_record_description"),
+      title: tAdv("items.track_record.title"),
+      highlight: tAdv("items.track_record.highlight"),
+      description: tAdv("items.track_record.description"),
     },
     {
-      title: t("quality_title"),
-      description: t("quality_description"),
+      title: tAdv("items.quality.title"),
+      highlight: tAdv("items.quality.highlight"),
+      description: tAdv("items.quality.description"),
     },
     {
-      title: t("communication_title"),
-      description: t("communication_description"),
+      title: tAdv("items.communication.title"),
+      highlight: tAdv("items.communication.highlight"),
+      description: tAdv("items.communication.description"),
     },
   ];
 
