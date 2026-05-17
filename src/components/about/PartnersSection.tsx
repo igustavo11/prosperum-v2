@@ -26,6 +26,18 @@ export default function PartnersSection() {
       description: t("forca_builders_description"),
       websiteUrl: "#",
     },
+    {
+      logoSrc: "/images/fernandespartens.webp",
+      name: t("fernandes_equity_name"),
+      description: t("fernandes_equity_description"),
+      websiteUrl: "https://fernandesequity.com/",
+    },
+    {
+      logoSrc: "/images/elasdesignslogo.webp",
+      name: t("elardesigns_name"),
+      description: t("elardesigns_description"),
+      websiteUrl: "https://www.elardesigns.com/",
+    },
   ];
 
   const visitLabel = t("visit_website");
