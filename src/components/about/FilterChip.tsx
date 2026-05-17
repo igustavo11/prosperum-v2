@@ -20,7 +20,7 @@ export default function FilterChip({ label, iconSrc }: FilterChipProps) {
       <div className="relative w-8 h-8 flex-shrink-0">
         <Image src={iconSrc} alt="" fill className="object-contain" />
       </div>
-      <span className="text-[24px] font-medium text-white whitespace-nowrap">
+      <span className="text-[18px] md:text-[24px] font-medium text-white whitespace-nowrap">
         {label}
       </span>
     </div>

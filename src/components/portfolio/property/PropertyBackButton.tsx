@@ -10,9 +10,10 @@ export default function PropertyBackButton() {
   return (
     <Link
       href="/portfolio"
-      className="inline-flex items-center gap-3 bg-[#0e8944] rounded-[50px] h-[45px] px-6 w-fit font-['Urbanist'] font-medium text-[20px] text-white hover:bg-[#0a6e37] transition-colors"
+      className="inline-flex items-center gap-3 bg-[#0e8944] rounded-[50px] h-[44px] md:h-[45px] px-4 md:px-6 w-full md:w-fit justify-center md:justify-start font-['Urbanist'] font-medium text-[16px] md:text-[20px] text-white hover:bg-[#0a6e37] transition-colors"
     >
-      <ArrowLeft size={17} />
+      <ArrowLeft size={16} className="md:hidden" />
+      <ArrowLeft size={17} className="hidden md:block" />
       {t("backToPortfolio")}
     </Link>
   );

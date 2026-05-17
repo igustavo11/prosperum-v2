@@ -141,23 +141,6 @@ export default function Navbar() {
               {link.label}
             </Link>
           ))}
-          <button
-            type="button"
-            onClick={() => {
-              toggleLocale();
-              setMenuOpen(false);
-            }}
-            className="flex items-center gap-2 border border-[#212121] rounded-[40px] px-4 h-10 text-[#212121] text-base font-normal"
-          >
-            <Image
-              src="/images/flag-en.png"
-              alt=""
-              width={24}
-              height={24}
-              className="rounded-full object-cover"
-            />
-            <span>{t("language")}</span>
-          </button>
         </div>
       )}
     </header>

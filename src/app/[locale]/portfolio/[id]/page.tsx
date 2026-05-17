@@ -15,9 +15,9 @@ export default async function PropertyPage({ params }: Props) {
 
   return (
     <div className="min-h-screen bg-[#d9d9d9]">
-      <div className="max-w-[1440px] mx-auto px-[86px] pt-[190px] pb-[80px]">
-        {/* Back button: above the image */}
-        <div className="mb-6">
+      <div className="max-w-[1440px] mx-auto px-4 md:px-[86px] pt-24 md:pt-[190px] pb-8 md:pb-[80px]">
+        {/* Desktop: Back button above image. Mobile: hidden above, shown below card */}
+        <div className="mb-6 hidden md:block">
           <PropertyBackButton />
         </div>
 
@@ -29,11 +29,16 @@ export default async function PropertyPage({ params }: Props) {
           />
 
           {/* Card: overlaps bottom of image */}
-          <div className="relative -mt-[120px] flex justify-center">
-            <div className="w-full max-w-[938px]">
+          <div className="relative -mt-[40px] md:-mt-[120px] flex justify-center">
+            <div className="w-full max-w-full md:max-w-[938px]">
               <PropertyInfoCard property={property} />
             </div>
           </div>
+        </div>
+
+        {/* Mobile: Back button below card */}
+        <div className="mt-6 md:hidden">
+          <PropertyBackButton />
         </div>
       </div>
     </div>

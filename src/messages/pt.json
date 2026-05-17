@@ -93,6 +93,7 @@
     "advantage": {
       "title_line1": "A Vantagem",
       "title_line2": "Prosperium",
+      "description": "O que verdadeiramente nos diferencia é nossa capacidade de combinar inovação com precisão. Na Prosperum, dedicamo-nos não apenas a desenvolver propriedades imobiliárias excepcionais, mas também a criar parcerias duradouras com nossos investidores. Nosso foco em sustentabilidade, impacto comunitário e execução superior de projetos impulsiona nosso sucesso e garante que continuemos a superar o mercado.",
       "items": {
         "expertise": {
           "title": "Expertise e Experiência",
@@ -153,7 +154,24 @@
       "interested_in": "Tenho interesse em",
       "heard_about": "Como ficou sabendo de nós?",
       "message": "Mensagem",
-      "submit": "Enviar mensagem"
+      "submit": "Enviar mensagem",
+      "options": {
+        "interest": {
+          "equity": "Investimento em equity",
+          "debt": "Investimento em dívida",
+          "project": "Investimento por projeto",
+          "partnership": "Parceria estratégica",
+          "general": "Informações gerais"
+        },
+        "heard": {
+          "linkedin": "LinkedIn",
+          "instagram": "Instagram",
+          "google": "Pesquisa no Google",
+          "referral": "Indicação",
+          "event": "Evento ou webinar",
+          "other": "Outro"
+        }
+      }
     }
   },
   "portfolio": {

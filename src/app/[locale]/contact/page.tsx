@@ -9,13 +9,13 @@ export default function ContactPage() {
       <Navbar />
       <ContactHero />
       <section className="bg-[#d9d9d9] relative">
-        <div className="max-w-[1440px] mx-auto pl-[199px] pr-[153px]">
+        <div className="max-w-[1440px] mx-auto px-5 md:px-10 lg:pl-[199px] lg:pr-[153px]">
           <div className="relative pb-20">
-            <div className="pt-[89px] w-[376px]">
+            <div className="pt-10 md:pt-[89px] w-full lg:w-[376px]">
               <ContactInfo />
             </div>
 
-            <div className="absolute top-0 left-[376px] -mt-[128px]">
+            <div className="mt-10 md:absolute md:top-0 md:left-[376px] md:-mt-[128px]">
               <ContactForm />
             </div>
           </div>

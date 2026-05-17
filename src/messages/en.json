@@ -93,6 +93,7 @@
     "advantage": {
       "title_line1": "The Prosperum",
       "title_line2": "Advantage",
+      "description": "What truly sets us apart is our ability to combine innovation with precision. At Prosperum, we are dedicated to not only developing exceptional real estate properties but also creating lasting partnerships with our investors. Our focus on sustainability, community impact, and superior project execution drives our success and ensures that we continue to outperform the market.",
       "items": {
         "expertise": {
           "title": "Expertise and Experience",
@@ -153,7 +154,24 @@
       "interested_in": "I'm interested in",
       "heard_about": "How did you hear about us?",
       "message": "Message",
-      "submit": "Send a message"
+      "submit": "Send a message",
+      "options": {
+        "interest": {
+          "equity": "Equity investment",
+          "debt": "Debt investment",
+          "project": "Project-specific investment",
+          "partnership": "Strategic partnership",
+          "general": "General information"
+        },
+        "heard": {
+          "linkedin": "LinkedIn",
+          "instagram": "Instagram",
+          "google": "Google search",
+          "referral": "Referral",
+          "event": "Event or webinar",
+          "other": "Other"
+        }
+      }
     }
   },
   "portfolio": {

@@ -21,10 +21,10 @@ export default function ProsperumAdvantage() {
 
       <div className="absolute inset-0 bg-black/50" />
 
-      <div className="relative z-10 max-w-[1440px] mx-auto px-[148px] py-24 flex items-start gap-16">
+      <div className="relative z-10 max-w-[1440px] mx-auto px-6 md:px-[148px] py-16 md:py-24 flex flex-col md:flex-row items-start gap-8 md:gap-16">
         <div className="shrink-0">
           <h2
-            className="text-[60px] mt-8
+            className="text-[40px] md:text-[60px] mt-4 md:mt-8
             font-medium text-white leading-tight"
           >
             {t("title_line1")}
@@ -33,7 +33,7 @@ export default function ProsperumAdvantage() {
           </h2>
         </div>
 
-        <p className="text-[24px] font-medium text-[#efefef] max-w-[706px] mt-2">
+        <p className="text-[16px] md:text-[24px] font-medium text-[#efefef] md:max-w-[706px] md:mt-2">
           {t("description")}
         </p>
       </div>
