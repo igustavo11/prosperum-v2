@@ -100,9 +100,6 @@ export const presets = {
   fadeIn,
   staggerContainer,
   slideInFromBottom,
-  parallax,
-  hoverScale,
-  hoverLift,
-} as const;
+} as const satisfies Record<string, Variants>;
 
 export type PresetName = keyof typeof presets;

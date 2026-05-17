@@ -1,5 +1,6 @@
 "use client";
 
+import React from "react";
 import { motion } from "framer-motion";
 import type { HTMLMotionProps } from "framer-motion";
 import { presets } from "./variants";
@@ -9,7 +10,7 @@ interface AnimatedSectionProps extends Omit<HTMLMotionProps<"div">, "variants"> 
   variant?: PresetName;
   delay?: number;
   children: React.ReactNode;
-  as?: keyof JSX.IntrinsicElements;
+  as?: keyof React.JSX.IntrinsicElements;
   className?: string;
 }
 
@@ -23,12 +24,14 @@ export function AnimatedSection({
 }: AnimatedSectionProps) {
   const preset = presets[variant];
 
+  type AnimVariant = { transition?: Record<string, unknown>; [k: string]: unknown };
+  const visible = preset.visible as AnimVariant;
   const customVariants = {
     hidden: preset.hidden,
     visible: {
-      ...preset.visible,
+      ...visible,
       transition: {
-        ...preset.visible.transition,
+        ...(visible.transition ?? {}),
         delay,
       },
     },
