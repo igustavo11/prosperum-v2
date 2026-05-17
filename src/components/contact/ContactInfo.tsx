@@ -26,9 +26,13 @@ export default function ContactInfo() {
             rel="noopener noreferrer"
             className="text-[20px] font-medium text-black underline leading-relaxed block"
           >
-            {t("office_address_line1")}
+            {t("office_country")}
             <br />
-            {t("office_address_line2")}
+            {t("office_street")}
+            <br />
+            {t("office_state")}
+            <br />
+            {t("office_zip")}
           </a>
         </div>
 
