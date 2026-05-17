@@ -10,7 +10,7 @@ export default function ContactPage() {
       <ContactHero />
       <section className="bg-[#d9d9d9] relative">
         <div className="max-w-[1440px] mx-auto px-5 md:px-10 lg:pl-[199px] lg:pr-[153px]">
-          <div className="relative pb-20">
+          <div className="relative pb-20 md:min-h-[680px]">
             <div className="pt-10 md:pt-[89px] w-full lg:w-[376px]">
               <ContactInfo />
             </div>

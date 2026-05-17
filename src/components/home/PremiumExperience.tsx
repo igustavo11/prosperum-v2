@@ -38,7 +38,7 @@ export default function PremiumExperience() {
         className="absolute inset-0 scale-125 will-change-transform"
       >
         <Image
-          src="/images/premium-paralax.png"
+          src="/images/premium-paralax.webp"
           alt=""
           fill
           sizes="100vw"

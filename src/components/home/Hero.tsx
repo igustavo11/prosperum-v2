@@ -14,7 +14,7 @@ export default function Hero() {
       {/* Full-width background at 10% opacity */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/images/hero-bg.png"
+          src="/images/hero-bg.webp"
           alt=""
           fill
           sizes="100vw"
@@ -26,7 +26,7 @@ export default function Hero() {
       {/* Mobile: building image as block element at top */}
       <div className="relative w-full h-[339px] mt-[62px] z-10 lg:hidden">
         <Image
-          src="/images/hero-building.png"
+          src="/images/hero-building.webp"
           alt="Modern apartment building"
           fill
           sizes="100vw"
@@ -46,7 +46,7 @@ export default function Hero() {
         }}
       >
         <Image
-          src="/images/hero-building.png"
+          src="/images/hero-building.webp"
           alt="Modern apartment building"
           fill
           sizes="50vw"

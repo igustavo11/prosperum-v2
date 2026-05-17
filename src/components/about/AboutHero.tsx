@@ -10,7 +10,7 @@ export default function AboutHero() {
     <section className="relative overflow-hidden min-h-[400px] md:min-h-[625px]">
       {/* Photo */}
       <Image
-        src="/images/about/abou.png"
+        src="/images/about/abou.webp"
         alt=""
         fill
         sizes="100vw"

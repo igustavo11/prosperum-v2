@@ -48,7 +48,7 @@ export default function ServicesSection() {
     >
       <div className="absolute inset-0 z-0">
         <Image
-          src="/images/bg-gradiente.png"
+          src="/images/bg-gradiente.webp"
           alt=""
           fill
           sizes="100vw"

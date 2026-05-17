@@ -9,7 +9,7 @@ export default function PortfolioHero() {
   return (
     <section className="relative overflow-hidden min-h-[400px] md:min-h-[800px]">
       <Image
-        src="/images/portfolio/hero.jpg"
+        src="/images/portfolio/hero.webp"
         alt=""
         fill
         sizes="100vw"
