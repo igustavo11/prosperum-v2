@@ -8,67 +8,75 @@ export type Property = {
 
 export const properties: Property[] = [
   {
-    id: "essex-residence-1",
-    title: "The Essex Residence",
-    location: "6 Schubert Ln, Paramus, NJ 07652",
+    id: "schubert-ln",
+    title: "Schubert Lane Residence",
+    location: "6 Schubert Ln",
     images: ["/images/portfolio/property-placeholder.jpg"],
     googleMapsUrl:
-      "https://www.google.com/maps/search/?api=1&query=6+Schubert+Ln+Paramus+NJ+07652",
+      "https://www.google.com/maps/search/?api=1&query=6+Schubert+Ln",
   },
   {
-    id: "essex-residence-2",
-    title: "The Essex Residence",
-    location: "6 Schubert Ln, Paramus, NJ 07652",
-    images: ["/images/portfolio/property-placeholder.jpg"],
+    id: "anderson-rd",
+    title: "Anderson Road Residence",
+    location: "170 Anderson Rd",
+    images: ["/images/portfolio/170anderson.jpeg"],
     googleMapsUrl:
-      "https://www.google.com/maps/search/?api=1&query=6+Schubert+Ln+Paramus+NJ+07652",
+      "https://www.google.com/maps/search/?api=1&query=170+Anderson+Rd",
   },
   {
-    id: "essex-residence-3",
-    title: "The Essex Residence",
-    location: "6 Schubert Ln, Paramus, NJ 07652",
-    images: ["/images/portfolio/property-placeholder.jpg"],
+    id: "edgewood-ave",
+    title: "Edgewood Avenue Residence",
+    location: "388 Edgewood Ave",
+    images: ["/images/portfolio/388egdwood.jpeg"],
     googleMapsUrl:
-      "https://www.google.com/maps/search/?api=1&query=6+Schubert+Ln+Paramus+NJ+07652",
+      "https://www.google.com/maps/search/?api=1&query=388+Edgewood+Ave",
   },
   {
-    id: "essex-residence-4",
-    title: "The Essex Residence",
-    location: "6 Schubert Ln, Paramus, NJ 07652",
+    id: "willow-ave",
+    title: "Willow Avenue Residence",
+    location: "431 Willow Ave",
     images: ["/images/portfolio/property-placeholder.jpg"],
     googleMapsUrl:
-      "https://www.google.com/maps/search/?api=1&query=6+Schubert+Ln+Paramus+NJ+07652",
+      "https://www.google.com/maps/search/?api=1&query=431+Willow+Ave",
   },
   {
-    id: "essex-residence-5",
-    title: "The Essex Residence",
-    location: "6 Schubert Ln, Paramus, NJ 07652",
-    images: ["/images/portfolio/property-placeholder.jpg"],
+    id: "falmouth-ave",
+    title: "Falmouth Avenue Residence",
+    location: "635 Falmouth Ave",
+    images: ["/images/portfolio/635falmouth.webp"],
     googleMapsUrl:
-      "https://www.google.com/maps/search/?api=1&query=6+Schubert+Ln+Paramus+NJ+07652",
+      "https://www.google.com/maps/search/?api=1&query=635+Falmouth+Ave",
   },
   {
-    id: "essex-residence-6",
-    title: "The Essex Residence",
-    location: "6 Schubert Ln, Paramus, NJ 07652",
-    images: ["/images/portfolio/property-placeholder.jpg"],
+    id: "evans-st",
+    title: "Evans Street Residence",
+    location: "715 Evans St",
+    images: ["/images/portfolio/715-Evans-St-Paramus-Boro.jpeg"],
     googleMapsUrl:
-      "https://www.google.com/maps/search/?api=1&query=6+Schubert+Ln+Paramus+NJ+07652",
+      "https://www.google.com/maps/search/?api=1&query=715+Evans+St",
   },
   {
-    id: "essex-residence-7",
-    title: "The Essex Residence",
-    location: "6 Schubert Ln, Paramus, NJ 07652",
-    images: ["/images/portfolio/property-placeholder.jpg"],
+    id: "hobart-gap-rd",
+    title: "Hobart Gap Road Residence",
+    location: "198 W Hobart Gap Rd, Livingston, NJ",
+    images: ["/images/portfolio/198-W-Hobart-Gap-Rd-Livingston-Twp.webp"],
     googleMapsUrl:
-      "https://www.google.com/maps/search/?api=1&query=6+Schubert+Ln+Paramus+NJ+07652",
+      "https://www.google.com/maps/search/?api=1&query=198+W+Hobart+Gap+Rd+Livingston+NJ",
   },
   {
-    id: "essex-residence-8",
-    title: "The Essex Residence",
-    location: "6 Schubert Ln, Paramus, NJ 07652",
+    id: "cedar-st",
+    title: "Cedar Street Residence",
+    location: "2E Cedar St, Livingston Twp, NJ",
+    images: ["/images/portfolio/2E-Cedar-St-Livingston-Twp.webp"],
+    googleMapsUrl:
+      "https://www.google.com/maps/search/?api=1&query=2E+Cedar+St+Livingston+NJ",
+  },
+  {
+    id: "van-houten-ave",
+    title: "Van Houten Avenue Residence",
+    location: "583 Van Houten Ave",
     images: ["/images/portfolio/property-placeholder.jpg"],
     googleMapsUrl:
-      "https://www.google.com/maps/search/?api=1&query=6+Schubert+Ln+Paramus+NJ+07652",
+      "https://www.google.com/maps/search/?api=1&query=583+Van+Houten+Ave",
   },
 ];

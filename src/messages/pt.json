@@ -68,11 +68,11 @@
     "pillars": {
       "title": "Nossos Pilares",
       "mission_title": "Missão",
-      "mission_description": "O que nos diferencia é nossa capacidade de combinar inovação com precisão. Na Prosperium, somos dedicados não apenas ao desenvolvimento de propriedades imobiliárias excepcionais, mas também à criação de parcerias duradouras com nossos investidores.",
+      "mission_description": "A missão da Prosperium é oferecer retornos atraentes e ajustados ao risco para os investidores por meio do desenvolvimento imobiliário estratégico.",
       "strategy_title": "Estratégia",
-      "strategy_description": "O que nos diferencia é nossa capacidade de combinar inovação com precisão. Na Prosperium, somos dedicados não apenas ao desenvolvimento de propriedades imobiliárias excepcionais, mas também à criação de parcerias duradouras com nossos investidores.",
+      "strategy_description": "A empresa foca em transformar ativos subutilizados em propriedades de alto desempenho, com ênfase na criação de valor, sustentabilidade e crescimento de longo prazo.",
       "principles_title": "Princípios",
-      "principles_description": "O que nos diferencia é nossa capacidade de combinar inovação com precisão. Na Prosperium, somos dedicados não apenas ao desenvolvimento de propriedades imobiliárias excepcionais, mas também à criação de parcerias duradouras com nossos investidores."
+      "principles_description": "Nossos princípios são: criação de valor, sustentabilidade e crescimento de longo prazo, com forte colaboração entre parceiros para garantir projetos que atendam às expectativas dos investidores."
     },
     "why_invest": {
       "title": "Por Que Investir com a Prosperium?",
@@ -93,13 +93,38 @@
     "advantage": {
       "title_line1": "A Vantagem",
       "title_line2": "Prosperium",
-      "description": "O que realmente nos diferencia é nossa capacidade de combinar inovação com precisão. Na Prosperium, somos dedicados não apenas ao desenvolvimento de propriedades imobiliárias excepcionais, mas também à criação de parcerias duradouras com nossos investidores. Nosso foco em sustentabilidade, impacto comunitário e execução superior de projetos impulsiona nosso sucesso."
+      "items": {
+        "expertise": {
+          "title": "Expertise e Experiência",
+          "highlight": "Seja uma referência fazendo a coisa certa do jeito certo!",
+          "description": "Nossa equipe é formada por veteranos do setor com décadas de experiência em investimento, desenvolvimento e construção imobiliária. Trazemos um vasto conhecimento e um histórico de sucesso para cada projeto."
+        },
+        "track_record": {
+          "title": "Histórico Comprovado",
+          "highlight": "Seja uma referência fazendo a coisa certa do jeito certo!",
+          "description": "Com múltiplos projetos bem-sucedidos concluídos e em andamento, a Prosperium cumpriu consistentemente suas promessas, alcançando retornos sólidos para seus investidores."
+        },
+        "quality": {
+          "title": "Compromisso com a Qualidade",
+          "highlight": "Seja uma referência fazendo a coisa certa do jeito certo!",
+          "description": "Do design à execução, garantimos que cada projeto atenda aos mais altos padrões de qualidade, durabilidade e sustentabilidade. Esse compromisso aumenta o valor das nossas propriedades e garante lucratividade de longo prazo para nossos investidores."
+        },
+        "communication": {
+          "title": "Comunicação Transparente e Aberta",
+          "highlight": "Seja uma referência fazendo a coisa certa do jeito certo!",
+          "description": "Fornecemos relatórios regulares e detalhados de cada projeto, garantindo que nossos investidores estejam sempre informados e possam tomar decisões com confiança."
+        }
+      }
     },
     "partners": {
       "title": "Nossos Parceiros",
       "visit_website": "Visitar Site",
       "forca_builders_name": "Força Builders",
       "forca_builders_description": "Investir com a Prosperium oferece mais do que retornos financeiros — oferece acesso a uma equipe de especialistas apaixonados pelo desenvolvimento imobiliário e comprometidos em criar valor de longo prazo para os investidores.",
+      "fernandes_equity_name": "Fernandes Equity",
+      "fernandes_equity_description": "Uma empresa de investimentos imobiliários especializada em conectar investidores a empreendimentos exclusivos nos Estados Unidos, com mais de US$ 800 milhões em projetos entregues e mais de 10 anos de atuação internacional.",
+      "elardesigns_name": "Elar Designs",
+      "elardesigns_description": "Um estúdio de design de interiores sediado em Nova York, criando espaços refinados para varejo de luxo, restaurantes, escritórios e projetos residenciais com foco em luz, textura e atmosfera.",
       "prev": "Anterior",
       "next": "Próximo"
     }
@@ -112,12 +137,12 @@
     "direct": "Contato Direto",
     "tagline": "Somos fáceis de contatar.",
     "office_label": "ESCRITÓRIO",
-    "office_address_line1": "144 Essex St",
-    "office_address_line2": "Rochelle Park, NJ 07662",
+    "office_country": "Estados Unidos",
+    "office_street": "144 Essex St, Rochelle Park.",
+    "office_state": "New Jersey",
+    "office_zip": "07662",
     "phone_label": "TELEFONE",
-    "phone_number": "+1 (555) 123-4567",
     "email_label": "E-MAIL",
-    "email_address": "invest@prosperium.com",
     "form": {
       "title": "Nos conte um pouco sobre seu interesse.",
       "subtitle": "Todos os campos com asterisco são obrigatórios.",
@@ -144,76 +169,85 @@
     "backToPortfolio": "VOLTAR AO PORTFÓLIO",
     "highlights": "Destaques",
     "properties": {
-      "essex-residence-1": {
-        "description": "Adquirida como demolição em um lote de esquina desejável em Rochelle Park. A estrutura original dos anos 1950 não estava em conformidade e era subdimensionada para o terreno. A Prosperium demoliu e reconstruiu até o envelope máximo permitido, entregando uma residência transitional-moderna de 4.200 sqft com cinco quartos, quatro banheiros e meio, e um nível inferior com saída ao ar livre.\n\nA casa foi listada em 14 dias após o certificado de ocupação e entrou em contrato acima do preço pedido no primeiro fim de semana de exibições, validando tanto a tese de localização quanto o investimento no nível de acabamento.",
+      "schubert-ln": {
+        "description": "Residência adquirida pela Prosperium para desenvolvimento e reposicionamento. A propriedade foi reformada com acabamentos de alto padrão, maximizando o potencial do lote e entregando uma residência moderna que atende às demandas do mercado local.\n\nO projeto foi concluído dentro do prazo e do orçamento, demonstrando a capacidade da Prosperium de executar desenvolvimentos residenciais com eficiência e qualidade.",
         "highlights": [
-          "Cinco quartos, quatro banheiros e meio, porão completo com saída ao exterior",
-          "Pisos de carvalho branco, ilha em mármore com cascata, marcenaria personalizada",
-          "Vendida acima do preço pedido no primeiro fim de semana de exibições",
-          "Construção verticalmente integrada sob o modelo Prosperium"
+          "Reformada com acabamentos de alto padrão",
+          "Entregue dentro do prazo e orçamento",
+          "Construção verticalmente integrada sob o modelo Prosperium",
+          "Reposicionamento estratégico para maximizar valor do ativo"
         ]
       },
-      "essex-residence-2": {
-        "description": "Adquirida como demolição em um lote de esquina desejável em Rochelle Park. A estrutura original dos anos 1950 não estava em conformidade e era subdimensionada para o terreno. A Prosperium demoliu e reconstruiu até o envelope máximo permitido, entregando uma residência transitional-moderna de 4.200 sqft com cinco quartos, quatro banheiros e meio, e um nível inferior com saída ao ar livre.\n\nA casa foi listada em 14 dias após o certificado de ocupação e entrou em contrato acima do preço pedido no primeiro fim de semana de exibições, validando tanto a tese de localização quanto o investimento no nível de acabamento.",
+      "anderson-rd": {
+        "description": "Residência adquirida pela Prosperium para desenvolvimento e reposicionamento. A propriedade foi reformada com acabamentos de alto padrão, maximizando o potencial do lote e entregando uma residência moderna que atende às demandas do mercado local.\n\nO projeto foi concluído dentro do prazo e do orçamento, demonstrando a capacidade da Prosperium de executar desenvolvimentos residenciais com eficiência e qualidade.",
         "highlights": [
-          "Cinco quartos, quatro banheiros e meio, porão completo com saída ao exterior",
-          "Pisos de carvalho branco, ilha em mármore com cascata, marcenaria personalizada",
-          "Vendida acima do preço pedido no primeiro fim de semana de exibições",
-          "Construção verticalmente integrada sob o modelo Prosperium"
+          "Reformada com acabamentos de alto padrão",
+          "Entregue dentro do prazo e orçamento",
+          "Construção verticalmente integrada sob o modelo Prosperium",
+          "Reposicionamento estratégico para maximizar valor do ativo"
         ]
       },
-      "essex-residence-3": {
-        "description": "Adquirida como demolição em um lote de esquina desejável em Rochelle Park. A estrutura original dos anos 1950 não estava em conformidade e era subdimensionada para o terreno. A Prosperium demoliu e reconstruiu até o envelope máximo permitido, entregando uma residência transitional-moderna de 4.200 sqft com cinco quartos, quatro banheiros e meio, e um nível inferior com saída ao ar livre.\n\nA casa foi listada em 14 dias após o certificado de ocupação e entrou em contrato acima do preço pedido no primeiro fim de semana de exibições, validando tanto a tese de localização quanto o investimento no nível de acabamento.",
+      "edgewood-ave": {
+        "description": "Residência adquirida pela Prosperium para desenvolvimento e reposicionamento. A propriedade foi reformada com acabamentos de alto padrão, maximizando o potencial do lote e entregando uma residência moderna que atende às demandas do mercado local.\n\nO projeto foi concluído dentro do prazo e do orçamento, demonstrando a capacidade da Prosperium de executar desenvolvimentos residenciais com eficiência e qualidade.",
         "highlights": [
-          "Cinco quartos, quatro banheiros e meio, porão completo com saída ao exterior",
-          "Pisos de carvalho branco, ilha em mármore com cascata, marcenaria personalizada",
-          "Vendida acima do preço pedido no primeiro fim de semana de exibições",
-          "Construção verticalmente integrada sob o modelo Prosperium"
+          "Reformada com acabamentos de alto padrão",
+          "Entregue dentro do prazo e orçamento",
+          "Construção verticalmente integrada sob o modelo Prosperium",
+          "Reposicionamento estratégico para maximizar valor do ativo"
         ]
       },
-      "essex-residence-4": {
-        "description": "Adquirida como demolição em um lote de esquina desejável em Rochelle Park. A estrutura original dos anos 1950 não estava em conformidade e era subdimensionada para o terreno. A Prosperium demoliu e reconstruiu até o envelope máximo permitido, entregando uma residência transitional-moderna de 4.200 sqft com cinco quartos, quatro banheiros e meio, e um nível inferior com saída ao ar livre.\n\nA casa foi listada em 14 dias após o certificado de ocupação e entrou em contrato acima do preço pedido no primeiro fim de semana de exibições, validando tanto a tese de localização quanto o investimento no nível de acabamento.",
+      "willow-ave": {
+        "description": "Residência adquirida pela Prosperium para desenvolvimento e reposicionamento. A propriedade foi reformada com acabamentos de alto padrão, maximizando o potencial do lote e entregando uma residência moderna que atende às demandas do mercado local.\n\nO projeto foi concluído dentro do prazo e do orçamento, demonstrando a capacidade da Prosperium de executar desenvolvimentos residenciais com eficiência e qualidade.",
         "highlights": [
-          "Cinco quartos, quatro banheiros e meio, porão completo com saída ao exterior",
-          "Pisos de carvalho branco, ilha em mármore com cascata, marcenaria personalizada",
-          "Vendida acima do preço pedido no primeiro fim de semana de exibições",
-          "Construção verticalmente integrada sob o modelo Prosperium"
+          "Reformada com acabamentos de alto padrão",
+          "Entregue dentro do prazo e orçamento",
+          "Construção verticalmente integrada sob o modelo Prosperium",
+          "Reposicionamento estratégico para maximizar valor do ativo"
         ]
       },
-      "essex-residence-5": {
-        "description": "Adquirida como demolição em um lote de esquina desejável em Rochelle Park. A estrutura original dos anos 1950 não estava em conformidade e era subdimensionada para o terreno. A Prosperium demoliu e reconstruiu até o envelope máximo permitido, entregando uma residência transitional-moderna de 4.200 sqft com cinco quartos, quatro banheiros e meio, e um nível inferior com saída ao ar livre.\n\nA casa foi listada em 14 dias após o certificado de ocupação e entrou em contrato acima do preço pedido no primeiro fim de semana de exibições, validando tanto a tese de localização quanto o investimento no nível de acabamento.",
+      "falmouth-ave": {
+        "description": "Residência adquirida pela Prosperium para desenvolvimento e reposicionamento. A propriedade foi reformada com acabamentos de alto padrão, maximizando o potencial do lote e entregando uma residência moderna que atende às demandas do mercado local.\n\nO projeto foi concluído dentro do prazo e do orçamento, demonstrando a capacidade da Prosperium de executar desenvolvimentos residenciais com eficiência e qualidade.",
         "highlights": [
-          "Cinco quartos, quatro banheiros e meio, porão completo com saída ao exterior",
-          "Pisos de carvalho branco, ilha em mármore com cascata, marcenaria personalizada",
-          "Vendida acima do preço pedido no primeiro fim de semana de exibições",
-          "Construção verticalmente integrada sob o modelo Prosperium"
+          "Reformada com acabamentos de alto padrão",
+          "Entregue dentro do prazo e orçamento",
+          "Construção verticalmente integrada sob o modelo Prosperium",
+          "Reposicionamento estratégico para maximizar valor do ativo"
         ]
       },
-      "essex-residence-6": {
-        "description": "Adquirida como demolição em um lote de esquina desejável em Rochelle Park. A estrutura original dos anos 1950 não estava em conformidade e era subdimensionada para o terreno. A Prosperium demoliu e reconstruiu até o envelope máximo permitido, entregando uma residência transitional-moderna de 4.200 sqft com cinco quartos, quatro banheiros e meio, e um nível inferior com saída ao ar livre.\n\nA casa foi listada em 14 dias após o certificado de ocupação e entrou em contrato acima do preço pedido no primeiro fim de semana de exibições, validando tanto a tese de localização quanto o investimento no nível de acabamento.",
+      "evans-st": {
+        "description": "Residência adquirida pela Prosperium para desenvolvimento e reposicionamento. A propriedade foi reformada com acabamentos de alto padrão, maximizando o potencial do lote e entregando uma residência moderna que atende às demandas do mercado local.\n\nO projeto foi concluído dentro do prazo e do orçamento, demonstrando a capacidade da Prosperium de executar desenvolvimentos residenciais com eficiência e qualidade.",
         "highlights": [
-          "Cinco quartos, quatro banheiros e meio, porão completo com saída ao exterior",
-          "Pisos de carvalho branco, ilha em mármore com cascata, marcenaria personalizada",
-          "Vendida acima do preço pedido no primeiro fim de semana de exibições",
-          "Construção verticalmente integrada sob o modelo Prosperium"
+          "Reformada com acabamentos de alto padrão",
+          "Entregue dentro do prazo e orçamento",
+          "Construção verticalmente integrada sob o modelo Prosperium",
+          "Reposicionamento estratégico para maximizar valor do ativo"
         ]
       },
-      "essex-residence-7": {
-        "description": "Adquirida como demolição em um lote de esquina desejável em Rochelle Park. A estrutura original dos anos 1950 não estava em conformidade e era subdimensionada para o terreno. A Prosperium demoliu e reconstruiu até o envelope máximo permitido, entregando uma residência transitional-moderna de 4.200 sqft com cinco quartos, quatro banheiros e meio, e um nível inferior com saída ao ar livre.\n\nA casa foi listada em 14 dias após o certificado de ocupação e entrou em contrato acima do preço pedido no primeiro fim de semana de exibições, validando tanto a tese de localização quanto o investimento no nível de acabamento.",
+      "hobart-gap-rd": {
+        "description": "Residência adquirida pela Prosperium para desenvolvimento e reposicionamento. A propriedade foi reformada com acabamentos de alto padrão, maximizando o potencial do lote e entregando uma residência moderna que atende às demandas do mercado local.\n\nO projeto foi concluído dentro do prazo e do orçamento, demonstrando a capacidade da Prosperium de executar desenvolvimentos residenciais com eficiência e qualidade.",
         "highlights": [
-          "Cinco quartos, quatro banheiros e meio, porão completo com saída ao exterior",
-          "Pisos de carvalho branco, ilha em mármore com cascata, marcenaria personalizada",
-          "Vendida acima do preço pedido no primeiro fim de semana de exibições",
-          "Construção verticalmente integrada sob o modelo Prosperium"
+          "Reformada com acabamentos de alto padrão",
+          "Entregue dentro do prazo e orçamento",
+          "Construção verticalmente integrada sob o modelo Prosperium",
+          "Reposicionamento estratégico para maximizar valor do ativo"
         ]
       },
-      "essex-residence-8": {
-        "description": "Adquirida como demolição em um lote de esquina desejável em Rochelle Park. A estrutura original dos anos 1950 não estava em conformidade e era subdimensionada para o terreno. A Prosperium demoliu e reconstruiu até o envelope máximo permitido, entregando uma residência transitional-moderna de 4.200 sqft com cinco quartos, quatro banheiros e meio, e um nível inferior com saída ao ar livre.\n\nA casa foi listada em 14 dias após o certificado de ocupação e entrou em contrato acima do preço pedido no primeiro fim de semana de exibições, validando tanto a tese de localização quanto o investimento no nível de acabamento.",
+      "cedar-st": {
+        "description": "Residência adquirida pela Prosperium para desenvolvimento e reposicionamento. A propriedade foi reformada com acabamentos de alto padrão, maximizando o potencial do lote e entregando uma residência moderna que atende às demandas do mercado local.\n\nO projeto foi concluído dentro do prazo e do orçamento, demonstrando a capacidade da Prosperium de executar desenvolvimentos residenciais com eficiência e qualidade.",
         "highlights": [
-          "Cinco quartos, quatro banheiros e meio, porão completo com saída ao exterior",
-          "Pisos de carvalho branco, ilha em mármore com cascata, marcenaria personalizada",
-          "Vendida acima do preço pedido no primeiro fim de semana de exibições",
-          "Construção verticalmente integrada sob o modelo Prosperium"
+          "Reformada com acabamentos de alto padrão",
+          "Entregue dentro do prazo e orçamento",
+          "Construção verticalmente integrada sob o modelo Prosperium",
+          "Reposicionamento estratégico para maximizar valor do ativo"
+        ]
+      },
+      "van-houten-ave": {
+        "description": "Residência adquirida pela Prosperium para desenvolvimento e reposicionamento. A propriedade foi reformada com acabamentos de alto padrão, maximizando o potencial do lote e entregando uma residência moderna que atende às demandas do mercado local.\n\nO projeto foi concluído dentro do prazo e do orçamento, demonstrando a capacidade da Prosperium de executar desenvolvimentos residenciais com eficiência e qualidade.",
+        "highlights": [
+          "Reformada com acabamentos de alto padrão",
+          "Entregue dentro do prazo e orçamento",
+          "Construção verticalmente integrada sob o modelo Prosperium",
+          "Reposicionamento estratégico para maximizar valor do ativo"
         ]
       }
     }

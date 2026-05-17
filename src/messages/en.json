@@ -68,11 +68,11 @@
     "pillars": {
       "title": "Our Pillars",
       "mission_title": "Mission",
-      "mission_description": "What truly sets us apart is our ability to combine innovation with precision. At Prosperium, we are dedicated to not only developing exceptional real estate properties but also creating lasting partnerships with our investors.",
+      "mission_description": "Prosperum's mission is to deliver attractive, risk-adjusted returns for investors through strategic real estate development.",
       "strategy_title": "Strategy",
-      "strategy_description": "What truly sets us apart is our ability to combine innovation with precision. At Prosperium, we are dedicated to not only developing exceptional real estate properties but also creating lasting partnerships with our investors.",
+      "strategy_description": "The company focuses on transforming underutilized assets into high-performing properties, with an emphasis on value creation, sustainability, and long-term growth.",
       "principles_title": "Principles",
-      "principles_description": "What truly sets us apart is our ability to combine innovation with precision. At Prosperium, we are dedicated to not only developing exceptional real estate properties but also creating lasting partnerships with our investors."
+      "principles_description": "Our principles are: value creation, sustainability, and long-term growth, with strong collaboration between partners to ensure projects that meet investor expectations."
     },
     "why_invest": {
       "title": "Why Invest with Prosperum?",
@@ -93,13 +93,38 @@
     "advantage": {
       "title_line1": "The Prosperum",
       "title_line2": "Advantage",
-      "description": "What truly sets us apart is our ability to combine innovation with precision. At Prosperium, we are dedicated to not only developing exceptional real estate properties but also creating lasting partnerships with our investors. Our focus on sustainability, community impact, and superior project execution drives our success and ensures that we continue to outperform the market."
+      "items": {
+        "expertise": {
+          "title": "Expertise and Experience",
+          "highlight": "Be a reference by doing the right thing the right way!",
+          "description": "Our team consists of industry veterans with decades of experience in real estate investment, development, and construction. We bring a wealth of knowledge and a track record of success to every project."
+        },
+        "track_record": {
+          "title": "Proven Track Record",
+          "highlight": "Be a reference by doing the right thing the right way!",
+          "description": "With multiple successful projects completed and in the pipeline, Prosperum has consistently delivered on its promises, achieving strong returns for its investors."
+        },
+        "quality": {
+          "title": "Commitment to Quality",
+          "highlight": "Be a reference by doing the right thing the right way!",
+          "description": "From design to execution, we ensure that every project meets the highest standards of quality, durability, and sustainability. This commitment enhances the value of our properties and ensures long-term profitability for our investors."
+        },
+        "communication": {
+          "title": "Transparent and Open Communication",
+          "highlight": "Be a reference by doing the right thing the right way!",
+          "description": "We provide regular, detailed reports and updates on each project, ensuring that our investors are always informed and can make decisions with confidence."
+        }
+      }
     },
     "partners": {
       "title": "Our Partners",
       "visit_website": "Visit Website",
       "forca_builders_name": "Força Builders",
-      "forca_builders_description": "Investing with Prosperum offers more than just financial returns—it offers access to a team of experts who are passionate about real estate development and committed to creating long-term value for investors. Here's why we stand out:",
+      "forca_builders_description": "A construction and general contracting company specializing in residential and commercial projects, delivering quality craftsmanship and reliable execution.",
+      "fernandes_equity_name": "Fernandes Equity",
+      "fernandes_equity_description": "A real estate investment firm specializing in connecting investors to exclusive developments in the United States, with over $800 million in delivered projects and more than 10 years of international presence.",
+      "elardesigns_name": "Elar Designs",
+      "elardesigns_description": "An interior design studio based in New York, creating refined spaces for luxury retail, restaurants, offices, and residential projects with a focus on light, texture, and atmosphere.",
       "prev": "Previous",
       "next": "Next"
     }
@@ -112,12 +137,12 @@
     "direct": "Direct Contact",
     "tagline": "We're easy to reach.",
     "office_label": "OFFICE",
-    "office_address_line1": "144 Essex St",
-    "office_address_line2": "Rochelle Park, NJ 07662",
+    "office_country": "United States",
+    "office_street": "144 Essex St, Rochelle Park.",
+    "office_state": "New Jersey",
+    "office_zip": "07662",
     "phone_label": "PHONE",
-    "phone_number": "+1 (555) 123-4567",
     "email_label": "E-MAIL",
-    "email_address": "invest@prosperium.com",
     "form": {
       "title": "Tell us a little about your interest.",
       "subtitle": "All fields with an asterisk are required.",
@@ -144,76 +169,85 @@
     "backToPortfolio": "BACK TO PORTFOLIO",
     "highlights": "Highlights",
     "properties": {
-      "essex-residence-1": {
-        "description": "Acquired as a tear-down on a desirable corner lot in Rochelle Park. The original 1950s structure was non-conforming and undersized for the lot. Prosperium demolished and rebuilt to the maximum allowable envelope, delivering a 4,200 sqft transitional-modern home with five bedrooms, four-and-a-half baths, and a walk-out lower level.\n\nThe home was listed within 14 days of certificate of occupancy and went under contract above asking price within the first weekend of showings, validating both the location thesis and the finish-level investment.",
+      "schubert-ln": {
+        "description": "Acquired by Prosperium for development and repositioning. The property was renovated with high-end finishes, maximizing the lot's potential and delivering a modern residence that meets local market demand.\n\nThe project was completed on time and within budget, demonstrating Prosperium's ability to execute residential developments with efficiency and quality.",
         "highlights": [
-          "Five bedrooms, four-and-a-half baths, finished walk-out basement",
-          "White oak engineered floors, marble waterfall island, custom millwork",
-          "Sold above asking within first weekend of showings",
-          "Vertically integrated build under the Prosperium model"
+          "Renovated with high-end finishes throughout",
+          "Delivered on time and within budget",
+          "Vertically integrated build under the Prosperium model",
+          "Strategic repositioning to maximize asset value"
         ]
       },
-      "essex-residence-2": {
-        "description": "Acquired as a tear-down on a desirable corner lot in Rochelle Park. The original 1950s structure was non-conforming and undersized for the lot. Prosperium demolished and rebuilt to the maximum allowable envelope, delivering a 4,200 sqft transitional-modern home with five bedrooms, four-and-a-half baths, and a walk-out lower level.\n\nThe home was listed within 14 days of certificate of occupancy and went under contract above asking price within the first weekend of showings, validating both the location thesis and the finish-level investment.",
+      "anderson-rd": {
+        "description": "Acquired by Prosperium for development and repositioning. The property was renovated with high-end finishes, maximizing the lot's potential and delivering a modern residence that meets local market demand.\n\nThe project was completed on time and within budget, demonstrating Prosperium's ability to execute residential developments with efficiency and quality.",
         "highlights": [
-          "Five bedrooms, four-and-a-half baths, finished walk-out basement",
-          "White oak engineered floors, marble waterfall island, custom millwork",
-          "Sold above asking within first weekend of showings",
-          "Vertically integrated build under the Prosperium model"
+          "Renovated with high-end finishes throughout",
+          "Delivered on time and within budget",
+          "Vertically integrated build under the Prosperium model",
+          "Strategic repositioning to maximize asset value"
         ]
       },
-      "essex-residence-3": {
-        "description": "Acquired as a tear-down on a desirable corner lot in Rochelle Park. The original 1950s structure was non-conforming and undersized for the lot. Prosperium demolished and rebuilt to the maximum allowable envelope, delivering a 4,200 sqft transitional-modern home with five bedrooms, four-and-a-half baths, and a walk-out lower level.\n\nThe home was listed within 14 days of certificate of occupancy and went under contract above asking price within the first weekend of showings, validating both the location thesis and the finish-level investment.",
+      "edgewood-ave": {
+        "description": "Acquired by Prosperium for development and repositioning. The property was renovated with high-end finishes, maximizing the lot's potential and delivering a modern residence that meets local market demand.\n\nThe project was completed on time and within budget, demonstrating Prosperium's ability to execute residential developments with efficiency and quality.",
         "highlights": [
-          "Five bedrooms, four-and-a-half baths, finished walk-out basement",
-          "White oak engineered floors, marble waterfall island, custom millwork",
-          "Sold above asking within first weekend of showings",
-          "Vertically integrated build under the Prosperium model"
+          "Renovated with high-end finishes throughout",
+          "Delivered on time and within budget",
+          "Vertically integrated build under the Prosperium model",
+          "Strategic repositioning to maximize asset value"
         ]
       },
-      "essex-residence-4": {
-        "description": "Acquired as a tear-down on a desirable corner lot in Rochelle Park. The original 1950s structure was non-conforming and undersized for the lot. Prosperium demolished and rebuilt to the maximum allowable envelope, delivering a 4,200 sqft transitional-modern home with five bedrooms, four-and-a-half baths, and a walk-out lower level.\n\nThe home was listed within 14 days of certificate of occupancy and went under contract above asking price within the first weekend of showings, validating both the location thesis and the finish-level investment.",
+      "willow-ave": {
+        "description": "Acquired by Prosperium for development and repositioning. The property was renovated with high-end finishes, maximizing the lot's potential and delivering a modern residence that meets local market demand.\n\nThe project was completed on time and within budget, demonstrating Prosperium's ability to execute residential developments with efficiency and quality.",
         "highlights": [
-          "Five bedrooms, four-and-a-half baths, finished walk-out basement",
-          "White oak engineered floors, marble waterfall island, custom millwork",
-          "Sold above asking within first weekend of showings",
-          "Vertically integrated build under the Prosperium model"
+          "Renovated with high-end finishes throughout",
+          "Delivered on time and within budget",
+          "Vertically integrated build under the Prosperium model",
+          "Strategic repositioning to maximize asset value"
         ]
       },
-      "essex-residence-5": {
-        "description": "Acquired as a tear-down on a desirable corner lot in Rochelle Park. The original 1950s structure was non-conforming and undersized for the lot. Prosperium demolished and rebuilt to the maximum allowable envelope, delivering a 4,200 sqft transitional-modern home with five bedrooms, four-and-a-half baths, and a walk-out lower level.\n\nThe home was listed within 14 days of certificate of occupancy and went under contract above asking price within the first weekend of showings, validating both the location thesis and the finish-level investment.",
+      "falmouth-ave": {
+        "description": "Acquired by Prosperium for development and repositioning. The property was renovated with high-end finishes, maximizing the lot's potential and delivering a modern residence that meets local market demand.\n\nThe project was completed on time and within budget, demonstrating Prosperium's ability to execute residential developments with efficiency and quality.",
         "highlights": [
-          "Five bedrooms, four-and-a-half baths, finished walk-out basement",
-          "White oak engineered floors, marble waterfall island, custom millwork",
-          "Sold above asking within first weekend of showings",
-          "Vertically integrated build under the Prosperium model"
+          "Renovated with high-end finishes throughout",
+          "Delivered on time and within budget",
+          "Vertically integrated build under the Prosperium model",
+          "Strategic repositioning to maximize asset value"
         ]
       },
-      "essex-residence-6": {
-        "description": "Acquired as a tear-down on a desirable corner lot in Rochelle Park. The original 1950s structure was non-conforming and undersized for the lot. Prosperium demolished and rebuilt to the maximum allowable envelope, delivering a 4,200 sqft transitional-modern home with five bedrooms, four-and-a-half baths, and a walk-out lower level.\n\nThe home was listed within 14 days of certificate of occupancy and went under contract above asking price within the first weekend of showings, validating both the location thesis and the finish-level investment.",
+      "evans-st": {
+        "description": "Acquired by Prosperium for development and repositioning. The property was renovated with high-end finishes, maximizing the lot's potential and delivering a modern residence that meets local market demand.\n\nThe project was completed on time and within budget, demonstrating Prosperium's ability to execute residential developments with efficiency and quality.",
         "highlights": [
-          "Five bedrooms, four-and-a-half baths, finished walk-out basement",
-          "White oak engineered floors, marble waterfall island, custom millwork",
-          "Sold above asking within first weekend of showings",
-          "Vertically integrated build under the Prosperium model"
+          "Renovated with high-end finishes throughout",
+          "Delivered on time and within budget",
+          "Vertically integrated build under the Prosperium model",
+          "Strategic repositioning to maximize asset value"
         ]
       },
-      "essex-residence-7": {
-        "description": "Acquired as a tear-down on a desirable corner lot in Rochelle Park. The original 1950s structure was non-conforming and undersized for the lot. Prosperium demolished and rebuilt to the maximum allowable envelope, delivering a 4,200 sqft transitional-modern home with five bedrooms, four-and-a-half baths, and a walk-out lower level.\n\nThe home was listed within 14 days of certificate of occupancy and went under contract above asking price within the first weekend of showings, validating both the location thesis and the finish-level investment.",
+      "hobart-gap-rd": {
+        "description": "Acquired by Prosperium for development and repositioning. The property was renovated with high-end finishes, maximizing the lot's potential and delivering a modern residence that meets local market demand.\n\nThe project was completed on time and within budget, demonstrating Prosperium's ability to execute residential developments with efficiency and quality.",
         "highlights": [
-          "Five bedrooms, four-and-a-half baths, finished walk-out basement",
-          "White oak engineered floors, marble waterfall island, custom millwork",
-          "Sold above asking within first weekend of showings",
-          "Vertically integrated build under the Prosperium model"
+          "Renovated with high-end finishes throughout",
+          "Delivered on time and within budget",
+          "Vertically integrated build under the Prosperium model",
+          "Strategic repositioning to maximize asset value"
         ]
       },
-      "essex-residence-8": {
-        "description": "Acquired as a tear-down on a desirable corner lot in Rochelle Park. The original 1950s structure was non-conforming and undersized for the lot. Prosperium demolished and rebuilt to the maximum allowable envelope, delivering a 4,200 sqft transitional-modern home with five bedrooms, four-and-a-half baths, and a walk-out lower level.\n\nThe home was listed within 14 days of certificate of occupancy and went under contract above asking price within the first weekend of showings, validating both the location thesis and the finish-level investment.",
+      "cedar-st": {
+        "description": "Acquired by Prosperium for development and repositioning. The property was renovated with high-end finishes, maximizing the lot's potential and delivering a modern residence that meets local market demand.\n\nThe project was completed on time and within budget, demonstrating Prosperium's ability to execute residential developments with efficiency and quality.",
         "highlights": [
-          "Five bedrooms, four-and-a-half baths, finished walk-out basement",
-          "White oak engineered floors, marble waterfall island, custom millwork",
-          "Sold above asking within first weekend of showings",
-          "Vertically integrated build under the Prosperium model"
+          "Renovated with high-end finishes throughout",
+          "Delivered on time and within budget",
+          "Vertically integrated build under the Prosperium model",
+          "Strategic repositioning to maximize asset value"
+        ]
+      },
+      "van-houten-ave": {
+        "description": "Acquired by Prosperium for development and repositioning. The property was renovated with high-end finishes, maximizing the lot's potential and delivering a modern residence that meets local market demand.\n\nThe project was completed on time and within budget, demonstrating Prosperium's ability to execute residential developments with efficiency and quality.",
+        "highlights": [
+          "Renovated with high-end finishes throughout",
+          "Delivered on time and within budget",
+          "Vertically integrated build under the Prosperium model",
+          "Strategic repositioning to maximize asset value"
         ]
       }
     }
