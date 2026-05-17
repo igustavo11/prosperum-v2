@@ -49,10 +49,10 @@ export default function PremiumExperience() {
       </div>
 
       {/* Text content */}
-      <div className="relative z-10 max-w-[1440px] mx-auto px-[148px] py-24 flex items-start gap-16">
+      <div className="relative z-10 max-w-[1440px] mx-auto px-6 py-16 flex flex-col gap-8 lg:px-[148px] lg:py-24 lg:flex-row lg:items-start lg:gap-16">
         {/* Left: title */}
         <div className="flex-shrink-0">
-          <h2 className="text-[55px] font-medium text-[#efefef] leading-tight">
+          <h2 className="text-[40px] lg:text-[55px] font-medium text-[#efefef] leading-tight">
             {t("title_1")}
             <br />
             {t("title_2")}
@@ -60,7 +60,7 @@ export default function PremiumExperience() {
         </div>
 
         {/* Right: description */}
-        <p className="text-2xl font-medium text-[#efefef] max-w-[706px] mt-2">
+        <p className="text-xl lg:text-2xl font-medium text-[#efefef] lg:max-w-[706px] lg:mt-2">
           {t("description")}
         </p>
       </div>

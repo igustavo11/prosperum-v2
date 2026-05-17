@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 
@@ -22,7 +24,7 @@ export default function Hero() {
       </div>
 
       {/* Mobile: building image as block element at top */}
-      <div className="relative w-full h-[260px] z-10 lg:hidden">
+      <div className="relative w-full h-[339px] mt-[62px] z-10 lg:hidden">
         <Image
           src="/images/hero-building.png"
           alt="Modern apartment building"
@@ -47,7 +49,7 @@ export default function Hero() {
           src="/images/hero-building.png"
           alt="Modern apartment building"
           fill
-          sizes="(max-width: 1024px) 0px, 50vw"
+          sizes="50vw"
           className="object-cover object-left-top"
           priority
         />

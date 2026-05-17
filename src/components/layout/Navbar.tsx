@@ -40,9 +40,9 @@ export default function Navbar() {
   ];
 
   return (
-    <header className="absolute top-0 left-0 right-0 z-50 px-[146px] py-[55px] flex items-center justify-between">
+    <header className="absolute top-0 left-0 right-0 z-50 px-4 py-[26px] lg:px-[146px] lg:py-[55px] flex items-center justify-between">
       {/* Logo */}
-      <a href="#hero" className="relative h-10 w-[191px] flex-shrink-0">
+      <a href="#hero" className="relative h-8 w-[152px] lg:h-10 lg:w-[191px] flex-shrink-0">
         <Image
           src={logoSrc}
           alt="Prosperium"
@@ -92,10 +92,27 @@ export default function Navbar() {
         <span>{t("language")}</span>
       </Button>
 
-      {/* Mobile hamburger */}
+      {/* Mobile: language toggle + hamburger */}
+      <div className="md:hidden flex items-center gap-3">
+        <button
+          type="button"
+          onClick={toggleLocale}
+          className={`flex items-center gap-1.5 rounded-[40px] px-3 h-9 text-sm font-normal transition-colors ${borderVariantClass}`}
+          aria-label="Switch language"
+        >
+          <Image
+            src={locale === "en" ? "/images/flag-en.png" : "/images/brasil.png"}
+            alt=""
+            width={20}
+            height={20}
+            className="rounded-full object-cover"
+          />
+          <span>{t("language")}</span>
+        </button>
+
       <button
         type="button"
-        className="md:hidden flex flex-col gap-1.5 p-2"
+        className="flex flex-col gap-1.5 p-2"
         onClick={() => setMenuOpen((o) => !o)}
         aria-label="Toggle menu"
       >
@@ -109,6 +126,7 @@ export default function Navbar() {
           className={`block w-6 h-0.5 transition-transform ${hamburgerColor} ${menuOpen ? "-rotate-45 -translate-y-2" : ""}`}
         />
       </button>
+      </div>
 
       {/* Mobile menu */}
       {menuOpen && (
