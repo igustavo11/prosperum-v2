@@ -43,13 +43,7 @@ export default function PillarsSection() {
   ];
 
   return (
-    <section
-      className="relative overflow-hidden py-16 md:py-24"
-      style={{
-        background:
-          "radial-gradient(ellipse at 50% 100%, #767676 0%, #5d5d5d 25%, #434343 50%, #2a2a2a 75%, #1d1d1d 87.5%, #101010 100%)",
-      }}
-    >
+    <section className="relative overflow-hidden bg-[#101010] py-16 md:py-24">
       <h2 className="text-[40px] md:text-[80px] font-medium text-white text-center mb-8 md:mb-16">
         {t("title")}
       </h2>

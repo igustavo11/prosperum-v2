@@ -4,6 +4,7 @@ import Image from "next/image";
 
 type PartnerCardProps = {
   logoSrc: string;
+  imageSrc?: string;
   name: string;
   description: string;
   websiteUrl: string;
@@ -12,56 +13,48 @@ type PartnerCardProps = {
 
 export default function PartnerCard({
   logoSrc,
+  imageSrc,
   name,
   description,
   websiteUrl,
   visitLabel,
 }: PartnerCardProps) {
   return (
-    <>
-      {/* Mobile: white card, centered content */}
-      <div className="flex md:hidden flex-col items-center gap-4 bg-[rgba(255,255,255,0.49)] rounded-[50px] px-8 py-10 w-[315px] min-h-[521px] justify-center">
-        <div className="relative flex-shrink-0 w-[189px] h-[150px]">
-          <Image src={logoSrc} alt={name} fill className="object-contain" />
-        </div>
-        <div className="flex flex-col gap-3 items-center">
-          <h3 className="text-[20px] font-bold text-black text-center">
-            {name}
-          </h3>
-          <p className="text-[16px] font-medium text-[#212121] text-center">
-            {description}
-          </p>
-          <a
-            href={websiteUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center justify-center w-[216px] h-[62px] rounded-[50px] bg-gradient-to-r from-[#be9339] to-[#e4d488] text-[24px] font-bold text-white mt-2"
-          >
+    <div className="group bg-white border border-[rgba(33,33,33,0.3)] rounded-[10px] shadow-[8px_8px_4px_0px_rgba(0,0,0,0.05)] w-full max-w-[409px]">
+      {/* Site screenshot with visit button overlay */}
+      <div className="relative mx-[17px] mt-[17px] h-[255px] rounded-[10px] border border-[rgba(33,33,33,0.5)] overflow-hidden">
+        {imageSrc ? (
+          <Image src={imageSrc} alt={name} fill className="object-cover" />
+        ) : (
+          <div className="w-full h-full bg-[#d9d9d9]" />
+        )}
+
+        <a
+          href={websiteUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="absolute inset-0 flex items-center justify-center bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-200"
+        >
+          <span className="inline-flex items-center justify-center w-[160px] h-[48px] rounded-[50px] bg-gradient-to-r from-[#be9339] to-[#e4d488] text-[16px] font-bold text-white">
             {visitLabel}
-          </a>
-        </div>
+          </span>
+        </a>
       </div>
 
-      {/* Desktop: horizontal layout */}
-      <div className="hidden md:flex items-center gap-12 h-full px-12">
-        <div className="relative flex-shrink-0 w-[301px] h-[238px]">
+      {/* Bottom: logo + name + description */}
+      <div className="flex items-start gap-4 px-[15px] pt-[12px] pb-[17px]">
+        <div className="relative flex-shrink-0 w-[88px] h-[70px]">
           <Image src={logoSrc} alt={name} fill className="object-contain" />
         </div>
-        <div className="flex flex-col gap-4">
-          <h3 className="text-[35px] font-bold text-black">{name}</h3>
-          <p className="text-[20px] font-medium text-[#212121] max-w-[534px]">
+        <div className="flex flex-col gap-[4px] min-w-0">
+          <h3 className="text-[20px] font-bold text-[#212121] leading-tight">
+            {name}
+          </h3>
+          <p className="text-[13px] font-medium text-[#212121] leading-normal line-clamp-4">
             {description}
           </p>
-          <a
-            href={websiteUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center justify-center w-[216px] h-[62px] rounded-[50px] bg-gradient-to-r from-[#be9339] to-[#e4d488] text-[24px] font-bold text-white mt-2"
-          >
-            {visitLabel}
-          </a>
         </div>
       </div>
-    </>
+    </div>
   );
 }

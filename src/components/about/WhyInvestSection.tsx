@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -50,7 +51,17 @@ export default function WhyInvestSection() {
   ];
 
   return (
-    <section className="py-16 md:py-24">
+    <section className="relative overflow-hidden py-16 md:py-24">
+      {/* Casa de fundo — blurred, baixa opacidade, igual ao Figma */}
+      <div className="absolute inset-0 pointer-events-none">
+        <Image
+          src="/images/about/assetabout.png"
+          alt=""
+          fill
+          className="object-cover scale-110"
+          aria-hidden="true"
+        />
+      </div>
       <div className="flex flex-col items-center mb-8 md:mb-12 px-6 md:px-[148px]">
         <h2 className="text-[40px] md:text-[60px] font-medium text-white text-center mb-4 md:mb-6">
           {t("title")}
