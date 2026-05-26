@@ -4,6 +4,7 @@
     "about": "ABOUT",
     "portfolio": "PORTFOLIO",
     "contact": "CONTACT",
+    "who_we_are": "WHO WE ARE",
     "language": "EN"
   },
   "hero": {
@@ -268,6 +269,31 @@
           "Strategic repositioning to maximize asset value"
         ]
       }
+    }
+  },
+  "who_we_are": {
+    "hero": {
+      "title": "Who We Are",
+      "subtitle": "We are a team of real estate professionals dedicated to creating lasting value through strategic investment and development across the United States."
+    },
+    "grid": {
+      "label": "Our Team",
+      "title": "Meet the Partners",
+      "view_profile": "View Profile"
+    },
+    "partners": {
+      "p1_name": "Jean Nunes",
+      "p1_role": "Construction & Real Estate Operator",
+      "p1_bio": "Jean Nunes is a construction and real estate operator specializing in value-add residential development, multifamily opportunities, and integrated construction management. Through Força Builders and Prosperum Investment Partners, Jean oversees projects from acquisition and planning through construction execution and operational delivery. His background in mechanical systems, renovations, and project operations provides a practical advantage in cost control, execution speed, and asset optimization.",
+      "p2_name": "Wendel Fernandes",
+      "p2_role": "Builder, Developer & Entrepreneur",
+      "p2_bio": "Wendel Fernandes is a builder, developer, and entrepreneur leading a group of companies focused on luxury homes, real estate development, and high-end construction across New Jersey and New York. His companies specialize in custom homes, multifamily projects, and premium interior finishes, offering a complete approach from development and sourcing to construction and installation. Known for being hands-on in every project, Wendel focuses on quality workmanship, modern design, and building properties with long-term value for both homeowners and investors.",
+      "p3_name": "Partner Name",
+      "p3_role": "Investment Director",
+      "p3_bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "p4_name": "Partner Name",
+      "p4_role": "Operations Partner",
+      "p4_bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
     }
   }
 }

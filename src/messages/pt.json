@@ -4,6 +4,7 @@
     "about": "SOBRE",
     "portfolio": "PORTFÓLIO",
     "contact": "CONTATO",
+    "who_we_are": "QUEM SOMOS",
     "language": "PT"
   },
   "hero": {
@@ -268,6 +269,31 @@
           "Reposicionamento estratégico para maximizar valor do ativo"
         ]
       }
+    }
+  },
+  "who_we_are": {
+    "hero": {
+      "title": "Quem Somos",
+      "subtitle": "Somos uma equipe de profissionais do mercado imobiliário dedicados a criar valor duradouro por meio de investimentos estratégicos e desenvolvimento nos Estados Unidos."
+    },
+    "grid": {
+      "label": "Nossa Equipe",
+      "title": "Conheça os Sócios",
+      "view_profile": "Ver Perfil"
+    },
+    "partners": {
+      "p1_name": "Jean Nunes",
+      "p1_role": "Operador de Construção & Imóveis",
+      "p1_bio": "Jean Nunes é um operador de construção e imóveis especializado em desenvolvimento residencial value-add, oportunidades multifamiliares e gestão integrada de obras. Através da Força Builders e da Prosperum Investment Partners, Jean supervisiona projetos desde a aquisição e planejamento até a execução das obras e entrega operacional. Sua experiência em sistemas mecânicos, reformas e operações de projetos oferece uma vantagem prática em controle de custos, velocidade de execução e otimização de ativos.",
+      "p2_name": "Wendel Fernandes",
+      "p2_role": "Construtor, Incorporador & Empreendedor",
+      "p2_bio": "Wendel Fernandes é um construtor, incorporador e empreendedor que lidera um grupo de empresas focadas em casas de luxo, desenvolvimento imobiliário e construção de alto padrão em Nova Jersey e Nova York. Suas empresas são especializadas em casas personalizadas, projetos multifamiliares e acabamentos interiores premium, oferecendo uma abordagem completa desde o desenvolvimento e a sourcing até a construção e instalação. Reconhecido por ser mão na massa em cada projeto, Wendel se concentra em qualidade de execução, design moderno e construção de imóveis com valor de longo prazo para proprietários e investidores.",
+      "p3_name": "Nome do Sócio",
+      "p3_role": "Diretor de Investimentos",
+      "p3_bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "p4_name": "Nome do Sócio",
+      "p4_role": "Sócio de Operações",
+      "p4_bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
     }
   }
 }

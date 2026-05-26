@@ -13,9 +13,12 @@ export default function Navbar() {
   const router = useRouter();
   const [menuOpen, setMenuOpen] = useState(false);
 
-  const isWhiteVariant = ["/about", "/portfolio", "/contact"].includes(
-    pathname,
-  );
+  const isWhiteVariant = [
+    "/about",
+    "/portfolio",
+    "/contact",
+    "/who-we-are",
+  ].includes(pathname);
   const isPropertyDetail = pathname.startsWith("/portfolio/");
   const logoSrc =
     isWhiteVariant || isPropertyDetail
@@ -35,6 +38,7 @@ export default function Navbar() {
   const links = [
     { label: t("home"), href: "/" },
     { label: t("about"), href: "/about" },
+    { label: t("who_we_are"), href: "/who-we-are" },
     { label: t("portfolio"), href: "/portfolio" },
     { label: t("contact"), href: "/contact" },
   ];
@@ -42,7 +46,10 @@ export default function Navbar() {
   return (
     <header className="absolute top-0 left-0 right-0 z-50 px-4 py-[26px] lg:px-[146px] lg:py-[55px] flex items-center justify-between">
       {/* Logo */}
-      <a href="#hero" className="relative h-8 w-[152px] lg:h-10 lg:w-[191px] flex-shrink-0">
+      <a
+        href="#hero"
+        className="relative h-8 w-[152px] lg:h-10 lg:w-[191px] flex-shrink-0"
+      >
         <Image
           src={logoSrc}
           alt="Prosperium"
@@ -110,22 +117,22 @@ export default function Navbar() {
           <span>{t("language")}</span>
         </button>
 
-      <button
-        type="button"
-        className="flex flex-col gap-1.5 p-2"
-        onClick={() => setMenuOpen((o) => !o)}
-        aria-label="Toggle menu"
-      >
-        <span
-          className={`block w-6 h-0.5 transition-transform ${hamburgerColor} ${menuOpen ? "rotate-45 translate-y-2" : ""}`}
-        />
-        <span
-          className={`block w-6 h-0.5 transition-opacity ${hamburgerColor} ${menuOpen ? "opacity-0" : ""}`}
-        />
-        <span
-          className={`block w-6 h-0.5 transition-transform ${hamburgerColor} ${menuOpen ? "-rotate-45 -translate-y-2" : ""}`}
-        />
-      </button>
+        <button
+          type="button"
+          className="flex flex-col gap-1.5 p-2"
+          onClick={() => setMenuOpen((o) => !o)}
+          aria-label="Toggle menu"
+        >
+          <span
+            className={`block w-6 h-0.5 transition-transform ${hamburgerColor} ${menuOpen ? "rotate-45 translate-y-2" : ""}`}
+          />
+          <span
+            className={`block w-6 h-0.5 transition-opacity ${hamburgerColor} ${menuOpen ? "opacity-0" : ""}`}
+          />
+          <span
+            className={`block w-6 h-0.5 transition-transform ${hamburgerColor} ${menuOpen ? "-rotate-45 -translate-y-2" : ""}`}
+          />
+        </button>
       </div>
 
       {/* Mobile menu */}
