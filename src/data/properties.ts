@@ -75,7 +75,7 @@ export const properties: Property[] = [
     id: "van-houten-ave",
     title: "Van Houten Avenue Residence",
     location: "583 Van Houten Ave",
-    images: ["/images/portfolio/van5831.jpeg", "/images/portfolio/van583.jpeg"],
+    images: ["/images/portfolio/van5831.jpeg"],
     googleMapsUrl:
       "https://www.google.com/maps/search/?api=1&query=583+Van+Houten+Ave+NJ",
   },
