@@ -1,8 +1,9 @@
 "use client";
 
 import Image from "next/image";
-import { useRef } from "react";
-import { Navigation, Pagination } from "swiper/modules";
+import { useState } from "react";
+import type { Swiper as SwiperType } from "swiper";
+import { Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
@@ -13,31 +14,17 @@ type Props = {
 };
 
 export default function PropertyImageSwiper({ images, title }: Props) {
-  const prevRef = useRef<HTMLButtonElement>(null);
-  const nextRef = useRef<HTMLButtonElement>(null);
+  const [swiper, setSwiper] = useState<SwiperType | null>(null);
   const hasMultiple = images.length > 1;
 
   return (
     <div className="relative w-full">
       <div className="relative w-full aspect-[3/2] overflow-hidden rounded-[20px]">
         <Swiper
-          modules={[Navigation, Pagination]}
+          modules={[Pagination]}
           loop={hasMultiple}
           pagination={hasMultiple ? { clickable: true } : false}
-          navigation={
-            hasMultiple
-              ? { prevEl: prevRef.current, nextEl: nextRef.current }
-              : false
-          }
-          onSwiper={(swiper) => {
-            if (!hasMultiple) return;
-            // @ts-expect-error swiper internal navigation typing
-            swiper.params.navigation.prevEl = prevRef.current;
-            // @ts-expect-error swiper internal navigation typing
-            swiper.params.navigation.nextEl = nextRef.current;
-            swiper.navigation.init();
-            swiper.navigation.update();
-          }}
+          onSwiper={setSwiper}
           className="w-full h-full"
         >
           {images.map((src, index) => (
@@ -58,7 +45,7 @@ export default function PropertyImageSwiper({ images, title }: Props) {
         <>
           <button
             type="button"
-            ref={prevRef}
+            onClick={() => swiper?.slidePrev()}
             aria-label="Previous image"
             className="absolute left-4 top-1/2 -translate-y-1/2 z-10 flex items-center justify-center w-10 h-10 rounded-full bg-white/70 hover:bg-white transition-colors"
           >
@@ -81,7 +68,7 @@ export default function PropertyImageSwiper({ images, title }: Props) {
           </button>
           <button
             type="button"
-            ref={nextRef}
+            onClick={() => swiper?.slideNext()}
             aria-label="Next image"
             className="absolute right-4 top-1/2 -translate-y-1/2 z-10 flex items-center justify-center w-10 h-10 rounded-full bg-white/70 hover:bg-white transition-colors"
           >
