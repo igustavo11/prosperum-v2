@@ -35,7 +35,7 @@ export const properties: Property[] = [
     id: "willow-ave",
     title: "Willow Avenue Residence",
     location: "431 Willow Ave",
-    images: ["/images/portfolio/willow.jpeg"],
+    images: ["/images/portfolio/willow.webp"],
     googleMapsUrl:
       "https://www.google.com/maps/search/?api=1&query=431+Willow+Ave",
   },
@@ -83,7 +83,7 @@ export const properties: Property[] = [
     id: "grand-ave-leonia",
     title: "Grand Avenue Residence",
     location: "Grand Ave, Leonia, NJ",
-    images: ["/images/portfolio/grandaveleonia.jpeg"],
+    images: ["/images/portfolio/grandaveleonia.webp"],
     googleMapsUrl:
       "https://www.google.com/maps/search/?api=1&query=Grand+Ave+Leonia+NJ",
   },
