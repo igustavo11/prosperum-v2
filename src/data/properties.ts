@@ -13,7 +13,7 @@ export const properties: Property[] = [
     location: "6 Schubert Ln",
     images: ["/images/portfolio/property-placeholder.jpg"],
     googleMapsUrl:
-      "https://www.google.com/maps/search/?api=1&query=6+Schubert+Ln",
+      "https://www.google.com/maps/search/?api=1&query=6+Schubert+Ln+NJ",
   },
   {
     id: "anderson-rd",
@@ -21,7 +21,7 @@ export const properties: Property[] = [
     location: "170 Anderson Rd",
     images: ["/images/portfolio/170anderson.jpeg"],
     googleMapsUrl:
-      "https://www.google.com/maps/search/?api=1&query=170+Anderson+Rd",
+      "https://www.google.com/maps/search/?api=1&query=170+Anderson+Rd+NJ",
   },
   {
     id: "edgewood-ave",
@@ -29,7 +29,7 @@ export const properties: Property[] = [
     location: "388 Edgewood Ave",
     images: ["/images/portfolio/388egdwood.jpeg"],
     googleMapsUrl:
-      "https://www.google.com/maps/search/?api=1&query=388+Edgewood+Ave",
+      "https://www.google.com/maps/search/?api=1&query=388+Edgewood+Ave+NJ",
   },
   {
     id: "willow-ave",
@@ -37,7 +37,7 @@ export const properties: Property[] = [
     location: "431 Willow Ave",
     images: ["/images/portfolio/willow.webp"],
     googleMapsUrl:
-      "https://www.google.com/maps/search/?api=1&query=431+Willow+Ave",
+      "https://www.google.com/maps/search/?api=1&query=431+Willow+Ave+NJ",
   },
   {
     id: "falmouth-ave",
@@ -45,7 +45,7 @@ export const properties: Property[] = [
     location: "635 Falmouth Ave",
     images: ["/images/portfolio/635falmouth.webp"],
     googleMapsUrl:
-      "https://www.google.com/maps/search/?api=1&query=635+Falmouth+Ave",
+      "https://www.google.com/maps/search/?api=1&query=635+Falmouth+Ave+NJ",
   },
   {
     id: "evans-st",
@@ -53,7 +53,7 @@ export const properties: Property[] = [
     location: "715 Evans St",
     images: ["/images/portfolio/715-Evans-St-Paramus-Boro.jpeg"],
     googleMapsUrl:
-      "https://www.google.com/maps/search/?api=1&query=715+Evans+St",
+      "https://www.google.com/maps/search/?api=1&query=715+Evans+St+Paramus+NJ",
   },
   {
     id: "hobart-gap-rd",
@@ -77,7 +77,7 @@ export const properties: Property[] = [
     location: "583 Van Houten Ave",
     images: ["/images/portfolio/property-placeholder.jpg"],
     googleMapsUrl:
-      "https://www.google.com/maps/search/?api=1&query=583+Van+Houten+Ave",
+      "https://www.google.com/maps/search/?api=1&query=583+Van+Houten+Ave+NJ",
   },
   {
     id: "grand-ave-leonia",
@@ -86,5 +86,13 @@ export const properties: Property[] = [
     images: ["/images/portfolio/grandaveleonia.webp"],
     googleMapsUrl:
       "https://www.google.com/maps/search/?api=1&query=Grand+Ave+Leonia+NJ",
+  },
+  {
+    id: "torrance-dr",
+    title: "Torrance Drive Residence",
+    location: "8 Torrance Dr, Livingston, NJ",
+    images: ["/images/portfolio/torrance-dr.webp"],
+    googleMapsUrl:
+      "https://www.google.com/maps/search/?api=1&query=8+Torrance+Dr+Livingston+NJ",
   },
 ];
