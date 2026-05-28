@@ -51,9 +51,9 @@ export const properties: Property[] = [
     id: "evans-st",
     title: "Evans Street Residence",
     location: "715 Evans St",
-    images: ["/images/portfolio/715-Evans-St-Paramus-Boro.jpeg"],
+    images: ["/images/portfolio/715evansparamusnj.webp"],
     googleMapsUrl:
-      "https://www.google.com/maps/search/?api=1&query=715+Evans+St+Paramus+NJ",
+      "https://www.google.com/maps/search/?api=1&query=757+Reeder+Rd+Paramus+NJ+07652",
   },
   {
     id: "hobart-gap-rd",
@@ -94,5 +94,21 @@ export const properties: Property[] = [
     images: ["/images/portfolio/torrance-dr.webp"],
     googleMapsUrl:
       "https://www.google.com/maps/search/?api=1&query=8+Torrance+Dr+Livingston+NJ",
+  },
+  {
+    id: "harvey-ln",
+    title: "Harvey Lane Residence",
+    location: "17 Harvey Ln, Upper Saddle River, NJ",
+    images: ["/images/portfolio/17-harvey.jpg"],
+    googleMapsUrl:
+      "https://www.google.com/maps/search/?api=1&query=17+Harvey+Ln+Upper+Saddle+River+NJ",
+  },
+  {
+    id: "myrtle-ave-scotch-plains",
+    title: "Myrtle Avenue Residence",
+    location: "352 Myrtle Ave, Scotch Plains, NJ",
+    images: ["/images/portfolio/property-placeholder.jpg"],
+    googleMapsUrl:
+      "https://www.google.com/maps/search/?api=1&query=352+Myrtle+Ave+Scotch+Plains+NJ",
   },
 ];
