@@ -99,7 +99,7 @@ export const properties: Property[] = [
     id: "harvey-ln",
     title: "Harvey Lane Residence",
     location: "17 Harvey Ln, Upper Saddle River, NJ",
-    images: ["/images/portfolio/17-harvey.jpg"],
+    images: ["/images/portfolio/17-harvey-new.jpeg"],
     googleMapsUrl:
       "https://www.google.com/maps/search/?api=1&query=17+Harvey+Ln+Upper+Saddle+River+NJ",
   },
