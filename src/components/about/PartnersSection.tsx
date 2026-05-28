@@ -60,7 +60,7 @@ export default function PartnersSection() {
       imageSrc: "/forca.png",
       name: t("forca_builders_name"),
       description: t("forca_builders_description"),
-      websiteUrl: "#",
+      websiteUrl: "https://forcabuilders.com",
     },
     {
       logoSrc: "/images/fernandespartens.webp",

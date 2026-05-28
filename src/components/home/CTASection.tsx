@@ -1,4 +1,5 @@
 import { useTranslations } from "next-intl";
+import { Link } from "@/navigation";
 
 export default function CTASection() {
   const t = useTranslations("cta");
@@ -20,8 +21,8 @@ export default function CTASection() {
         {t("subtitle")}
       </p>
 
-      <a
-        href="#contact"
+      <Link
+        href="/contact"
         className="inline-flex items-center justify-center h-[62px] px-10 rounded-[50px] text-2xl font-medium text-white hover:opacity-90 transition-opacity"
         style={{
           background: "linear-gradient(to right, #be9339 19%, #e4d488 84%)",
@@ -29,7 +30,7 @@ export default function CTASection() {
         }}
       >
         {t("button")}
-      </a>
+      </Link>
     </section>
   );
 }

@@ -3,6 +3,7 @@
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
+import { Link } from "@/navigation";
 
 export default function Disclaimer() {
   const t = useTranslations("portfolio.disclaimer");
@@ -36,14 +37,14 @@ export default function Disclaimer() {
         {t("subtitle")}
       </p>
 
-      <button
-        type="button"
+      <Link
+        href="/contact"
         className="mt-12 inline-flex items-center gap-3 bg-gradient-to-r from-[#be9339] to-[#e4d488] rounded-[50px] h-[44px] md:h-[62px] px-6 md:px-8 font-['Urbanist'] font-medium text-[16px] md:text-[24px] text-black"
       >
         {t("cta")}
         <ArrowRight size={16} className="md:hidden" />
         <ArrowRight size={20} className="hidden md:block" />
-      </button>
+      </Link>
     </section>
   );
 }

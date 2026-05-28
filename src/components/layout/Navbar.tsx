@@ -46,8 +46,8 @@ export default function Navbar() {
   return (
     <header className="absolute top-0 left-0 right-0 z-50 px-4 py-[26px] lg:px-[146px] lg:py-[55px] flex items-center justify-between">
       {/* Logo */}
-      <a
-        href="#hero"
+      <Link
+        href="/"
         className="relative h-8 w-[152px] lg:h-10 lg:w-[191px] flex-shrink-0"
       >
         <Image
@@ -58,7 +58,7 @@ export default function Navbar() {
           className="object-contain object-left"
           priority
         />
-      </a>
+      </Link>
 
       {/* Desktop nav links */}
       <nav className="hidden md:flex items-center gap-8">
