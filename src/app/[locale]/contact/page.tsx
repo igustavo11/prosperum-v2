@@ -1,11 +1,57 @@
+import type { Metadata } from "next";
+import { getTranslations } from "next-intl/server";
 import ContactForm from "@/components/contact/ContactForm";
 import ContactHero from "@/components/contact/ContactHero";
 import ContactInfo from "@/components/contact/ContactInfo";
 import Navbar from "@/components/layout/Navbar";
+import { buildAlternates, buildBreadcrumbLd, buildOG, SITE_URL } from "@/lib/seo";
 
-export default function ContactPage() {
+type Props = {
+  params: Promise<{ locale: string }>;
+};
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "meta" });
+  const title = t("contact_title");
+  const description = t("contact_description");
+
+  return {
+    title,
+    description,
+    alternates: buildAlternates(locale, "/contact"),
+    openGraph: buildOG(title, description, locale, "/contact"),
+    twitter: { card: "summary_large_image", title, description },
+  };
+}
+
+export default async function ContactPage({ params }: Props) {
+  const { locale } = await params;
+
+  const breadcrumbLd = buildBreadcrumbLd([
+    { name: "Home", url: `${SITE_URL}/${locale}` },
+    { name: "Contact", url: `${SITE_URL}/${locale}/contact` },
+  ]);
+
+  const contactPageLd = {
+    "@context": "https://schema.org",
+    "@type": "ContactPage",
+    url: `${SITE_URL}/${locale}/contact`,
+    name: "Contact Prosperium",
+    description:
+      "Contact Prosperium Investment Group for real estate investment opportunities in New Jersey and New York.",
+  };
+
   return (
     <div className="relative">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(contactPageLd) }}
+      />
       <Navbar />
       <ContactHero />
       <section className="bg-[#d9d9d9] relative">

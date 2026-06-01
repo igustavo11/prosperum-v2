@@ -17,9 +17,14 @@ export default function PropertyInfoCard({ property }: Props) {
     <div className="bg-[#0e8944] rounded-b-[40px] md:rounded-b-[60px] px-6 md:px-[80px] pt-[80px] md:pt-[140px] pb-8 md:pb-[60px] flex flex-col gap-6">
       {/* Title row */}
       <div className="flex flex-col md:flex-row items-start justify-between gap-4 md:gap-6">
-        <h1 className="font-['Urbanist'] font-semibold text-[32px] md:text-[64px] text-white leading-tight">
-          {property.title}
-        </h1>
+        <div className="flex flex-col gap-1 md:gap-2">
+          <p className="font-['Urbanist'] font-medium text-[12px] md:text-[16px] text-[#a8d5b5] uppercase tracking-widest">
+            {property.type}
+          </p>
+          <h1 className="font-['Urbanist'] font-semibold text-[32px] md:text-[64px] text-white leading-tight">
+            {property.title}
+          </h1>
+        </div>
         <a
           href={property.googleMapsUrl}
           target="_blank"

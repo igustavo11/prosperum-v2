@@ -1,20 +1,56 @@
+import type { Metadata } from "next";
+import { getTranslations } from "next-intl/server";
 import { notFound } from "next/navigation";
 import PropertyBackButton from "@/components/portfolio/property/PropertyBackButton";
 import PropertyImageSwiper from "@/components/portfolio/property/PropertyImageSwiper";
 import PropertyInfoCard from "@/components/portfolio/property/PropertyInfoCard";
 import { properties } from "@/data/properties";
+import { buildAlternates, buildOG, buildPropertyLd, SITE_URL } from "@/lib/seo";
 
 type Props = {
   params: Promise<{ id: string; locale: string }>;
 };
 
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { id, locale } = await params;
+  const property = properties.find((p) => p.id === id);
+  if (!property) return {};
+
+  const t = await getTranslations({ locale, namespace: "portfolio" });
+  const rawDescription: string = t(`properties.${id}.description`);
+  const description = rawDescription.split("\n")[0];
+  const title = `${property.title} — ${property.location}`;
+  const path = `/portfolio/${id}`;
+
+  return {
+    title,
+    description,
+    alternates: buildAlternates(locale, path),
+    openGraph: {
+      ...buildOG(title, description, locale, path),
+      images: property.images[0]
+        ? [{ url: `${SITE_URL}${property.images[0]}`, alt: property.title }]
+        : undefined,
+    },
+    twitter: { card: "summary_large_image", title, description },
+  };
+}
+
 export default async function PropertyPage({ params }: Props) {
-  const { id } = await params;
+  const { id, locale } = await params;
   const property = properties.find((p) => p.id === id);
   if (!property) notFound();
 
+  const t = await getTranslations({ locale, namespace: "portfolio" });
+  const description: string = t(`properties.${property.id}.description`);
+  const propertyLd = buildPropertyLd(property, description, locale);
+
   return (
     <div className="min-h-screen bg-[#d9d9d9]">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(propertyLd) }}
+      />
       <div className="max-w-[1440px] mx-auto px-4 md:px-[86px] pt-24 md:pt-[190px] pb-8 md:pb-[80px]">
         {/* Desktop: Back button above image. Mobile: hidden above, shown below card */}
         <div className="mb-6 hidden md:block">

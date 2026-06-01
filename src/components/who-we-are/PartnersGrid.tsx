@@ -46,7 +46,7 @@ export default function PartnersGrid() {
       name: t("partners.p4_name"),
       role: t("partners.p4_role"),
       bio: t("partners.p4_bio"),
-      photoSrc: "/images/who-we-are/partner-placeholder.jpg",
+      photoSrc: "/images/who-we-are/julhy.jpeg",
     },
   ];
 
